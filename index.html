@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CLOCKdesign Konfigurator</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="body">
+        <img src="images/logoWide.png" width="100%" alt="The CLOCKdesign logo">
+    </div>
+    <br>
+    <hr>
+    <h1>In drei Schritten zur neuen Zeit:</h1>
+
+    <ol>
+        <li>Vorgang per Knopfdruck starten</li>
+        <li>CLOCKdesign auswählen und verbinden</li>
+        <li>Die Zeit ihrer Uhr ist aktualisiert<br>
+            Weiterhin viel Freude damit!</li>
+    </ol>
+
+    <button class="button_wide" id="btnUpdateTime">Uhrzeit richten</button>
+    <hr>
+    <button class="button_wide" id="btnChangeModi">Modus ändern...</button>
+    <button class="button_wide" id="btnHelp">Hilfe</button>
+    <button class="button_wide" id="btnAbout">Impressum</button>
+
+    <h1> Debug </h1>
+    <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
+    <p>Gelesene Daten: <a id="receivedData">-</a></p>
+    <p>Gesendete Daten: <a id="sentData">-</a></p>
+    <button class="button_wide" id="connect">Verbinden</button>
+    <button class="button_wide" id="updateTimeButton">0x30</button>
+    <button class="button_wide" id="stateStrandtest">Test</button>
+    <button class="button_wide" id="stateMatrix">Matrix</button>
+    <button class="button_wide" id="stateWordclock">Wordclock</button>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6010"
+   height="2962.5193"
+   viewBox="0 0 1590.1458 783.83325"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="webpage_draft.svg"
+   inkscape:export-filename="C:\Users\marco\Desktop\bitmap.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="1200px"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="0.12197917"
+     inkscape:cx="2233.988"
+     inkscape:cy="1549.4449"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path84633" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:0.625;stroke-linejoin:round"
+         id="path84627" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path84609" />
+    </marker>
+    <rect
+       x="559.74408"
+       y="534.46582"
+       width="593.11011"
+       height="210.40932"
+       id="rect72816" />
+    <rect
+       x="177.97948"
+       y="1209.9482"
+       width="963.2749"
+       height="184.22437"
+       id="rect41137" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect32077" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect15212" />
+    <rect
+       x="-5.5817354e-06"
+       y="556.32294"
+       width="1108.4688"
+       height="673.92114"
+       id="rect4967" />
+    <rect
+       x="-5.5817354e-06"
+       y="556.32294"
+       width="1192.7747"
+       height="773.83948"
+       id="rect2057" />
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path826" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path829" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path831" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path833" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+    <rect
+       x="-5.5817354e-06"
+       y="556.32294"
+       width="1108.4688"
+       height="673.92114"
+       id="rect11176" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect22549" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect22559" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect22569" />
+    <rect
+       x="-5.5817354e-06"
+       y="556.32294"
+       width="1108.4688"
+       height="673.92114"
+       id="rect26649" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect38027" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect38033" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect42476" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect49146" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect51476" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect53142" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect32077-1" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect38027-5" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect38033-9" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect42476-0" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect49146-4" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect51476-3" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect53142-5" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect57086" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69592" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69594" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69596" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69598" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69600" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69602" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69604" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect69606" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69608" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect69610" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69612" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69614" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69616" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69618" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect69620" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69622" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect69624" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69626" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69938" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69940" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69942" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect69944" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69946" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69948" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69950" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect69952" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69954" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect69956" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69958" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69960" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69962" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect69964" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect69966" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69968" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect69970" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect69972" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect70128" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect70130" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect70132" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect70134" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70136" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70138" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70140" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect70142" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect70144" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect70146" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect70148" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70150" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70152" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect70154" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect70156" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect70158" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect70160" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect70162" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect82714" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect89823" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect90743" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93181" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93183" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93185" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93187" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect93189" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93191" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect93193" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93195" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93197" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93199" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93201" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93295" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93297" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93299" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93301" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect93303" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93305" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1121.8214"
+       height="555.44635"
+       id="rect93307" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93309" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93311" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93313" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93315" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93409" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93411" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93413" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93415" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect93417" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="763.42519"
+       height="574.66195"
+       id="rect93419" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect93421" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93423" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93425" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93427" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93429" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect93545" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93547" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93549" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="143.63255"
+       height="140.51012"
+       id="rect93551" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1259.9073"
+       height="192.03049"
+       id="rect93553" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93555" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1031.9688"
+       height="167.0509"
+       id="rect93557" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect93559" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect101254" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect101264" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect103306" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect103308" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect103310" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect121257" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect121259" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1121.8214"
+       height="555.44635"
+       id="rect121261" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect123467" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1121.8214"
+       height="555.44635"
+       id="rect123469" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect123487" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1121.8214"
+       height="555.44635"
+       id="rect123489" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1409.7848"
+       height="293.51001"
+       id="rect123491" />
+    <rect
+       x="34.346916"
+       y="1239.6115"
+       width="1121.8214"
+       height="555.44635"
+       id="rect123493" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect130393" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect130395" />
+    <rect
+       x="149.87746"
+       y="1726.7133"
+       width="996.06061"
+       height="240.42842"
+       id="rect130397" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.322915,1.322915)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157;stroke-opacity:1"
+       id="rect93317"
+       width="317.5"
+       height="781.18738"
+       x="1270"
+       y="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157;stroke-opacity:1"
+       id="rect93089"
+       width="317.5"
+       height="781.18738"
+       x="423.33334"
+       y="0" />
+    <g
+       id="g133085">
+      <g
+         id="g130377"
+         transform="translate(423.33331,-72.437622)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+           id="rect130371"
+           width="280.89011"
+           height="44.611961"
+           x="16.652716"
+           y="431.69717"
+           rx="8.2614746"
+           ry="8.2614746" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.26458333,0,0,0.26458333,31.401567,-14.217303)"
+           id="text130375"
+           style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect130393);fill:#ffffff;fill-opacity:1"><tspan
+             x="149.87695"
+             y="1798.7732"
+             id="tspan141271"><tspan
+               style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+               id="tspan141269">Matrix animieren</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g133090">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect130379"
+         width="280.89011"
+         height="44.611961"
+         x="439.98602"
+         y="413.34253"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,474.95586,-32.571957)"
+         id="text130383"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect130395);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141275"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141273">CLOCKdesign</tspan></tspan></text>
+    </g>
+    <g
+       id="g133095">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect130385"
+         width="280.89011"
+         height="44.611961"
+         x="439.98602"
+         y="466.25912"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,489.82317,20.344711)"
+         id="text130389"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect130397);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141279"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141277">Digitaluhr</tspan></tspan></text>
+    </g>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157;stroke-opacity:1"
+       id="rect69062"
+       width="317.5"
+       height="781.18738"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+       id="rect82706-9"
+       width="280.89011"
+       height="44.611961"
+       x="16.652716"
+       y="359.25955"
+       rx="8.2614746"
+       ry="8.2614746" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2055"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';white-space:pre;shape-inside:url(#rect2057)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text41135"
+       style="font-size:40px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect41137)" />
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-3"
+       transform="matrix(1.739522,0,0,1.739522,-32.697057,-502.31098)"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.217274;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         id="text20242"
+         style="font-size:10.5833px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.152102" />
+      <g
+         id="g5320"
+         transform="matrix(1.1269232,0,0,1.1269158,4.1114587,-29.661132)"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.192803">
+        <g
+           id="g92796"
+           transform="matrix(1.0310137,0,0,1.0310137,-2.9157364,-7.7557599)"
+           style="stroke-width:0.187003">
+          <path
+             id="rect4287"
+             style="fill:#000000;fill-opacity:1;stroke-width:0.0500369;stroke-miterlimit:4;stroke-dasharray:none"
+             d="M 38.707031,38.705078 V 108.67383 H 108.67383 V 38.705078 Z m 19.1875,28.527344 c 1.2194,0 2.247824,0.153181 3.083985,0.460937 v 2.708985 c -0.836161,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720027,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.340151,2.172548 1.019531,2.892579 0.67938,0.714221 1.59442,1.070312 2.744141,1.070312 1.09746,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.101226,0.662106 -3.570313,0.66211 -1.916201,0 -3.424024,-0.562962 -4.521484,-1.689454 -1.097461,-1.126492 -1.646485,-2.626396 -1.646485,-4.501953 0,-1.997491 0.616643,-3.618699 1.847657,-4.861328 1.23682,-1.242629 2.838179,-1.863281 4.80664,-1.863281 z m 19.416016,0 c 1.782647,0 3.220899,0.582861 4.318359,1.75 1.103267,1.167139 1.65625,2.706789 1.65625,4.617187 0,1.962656 -0.572883,3.544119 -1.716797,4.746094 -1.138107,1.201982 -2.624077,1.802735 -4.458984,1.802735 -1.788454,0 -3.246553,-0.580854 -4.373047,-1.742188 -1.126494,-1.167139 -1.689453,-2.684941 -1.689453,-4.554688 0,-1.974271 0.572883,-3.571619 1.716797,-4.791015 1.143914,-1.219403 2.659708,-1.828125 4.546875,-1.828125 z m 13.917969,0 c 1.2194,0 2.247824,0.153181 3.083984,0.460937 v 2.708985 c -0.83616,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720026,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.34015,2.172551 1.019532,2.892579 0.67938,0.714221 1.59442,1.070312 2.74414,1.070312 1.097461,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.103179,0.662109 -3.572266,0.66211 -1.9162,0 -3.42207,-0.562962 -4.519531,-1.689454 -1.09746,-1.126492 -1.646484,-2.626396 -1.646484,-4.501953 0,-1.997491 0.61469,-3.618699 1.845703,-4.861328 1.236821,-1.242629 2.840133,-1.863281 4.808594,-1.863281 z M 63.15625,67.441406 h 2.8125 v 10.207032 h 4.625 v 2.283203 h -7.4375 z m 33.332031,0 h 2.814453 v 5.904297 h 0.04297 c 0.06968,-0.162589 0.187023,-0.393367 0.349609,-0.695312 l 3.447267,-5.208985 h 3.35351 l -4.35351,5.957032 4.72851,6.533203 h -3.55273 l -3.640625,-5.427735 c -0.06968,-0.10452 -0.181057,-0.333298 -0.332031,-0.6875 h -0.04297 v 6.115235 h -2.814453 z m -19.257812,2.212891 c -0.987134,0 -1.770896,0.370022 -2.351563,1.113281 -0.580666,0.737441 -0.871094,1.716144 -0.871094,2.935547 0,1.236817 0.290428,2.215513 0.871094,2.935547 0.580667,0.720027 1.342523,1.080078 2.283203,1.080078 0.969714,0 1.739541,-0.348121 2.308594,-1.044922 0.569054,-0.702612 0.853516,-1.675346 0.853516,-2.917969 0,-1.294892 -0.276492,-2.301457 -0.828125,-3.021484 -0.551634,-0.720027 -1.307525,-1.080078 -2.265625,-1.080078 z"
+             transform="matrix(0.98883371,0,0,0.98883371,-18.880307,247.24038)" />
+          <g
+             aria-label="design.ch"
+             id="text13073-8-7"
+             style="font-size:17.6389px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.130911">
+            <path
+               d="m 100.72086,326.30151 h -2.721626 v -1.21439 h -0.03445 q -0.930176,1.42971 -2.73024,1.42971 -1.653647,0 -2.661338,-1.16272 -1.007691,-1.17133 -1.007691,-3.26423 0,-2.18764 1.111044,-3.50539 1.111044,-1.31775 2.911108,-1.31775 1.705323,0 2.377117,1.22301 h 0.03445 v -5.24516 h 2.721626 z m -2.669949,-4.28914 v -0.66318 q 0,-0.86128 -0.49954,-1.42972 -0.499539,-0.56844 -1.300524,-0.56844 -0.904338,0 -1.41249,0.71486 -0.508152,0.70624 -0.508152,1.94648 0,1.16272 0.490926,1.79145 0.490927,0.62873 1.360814,0.62873 0.826824,0 1.343588,-0.66318 0.525378,-0.66318 0.525378,-1.757 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2171" />
+            <path
+               d="m 110.93558,322.66694 h -5.75332 q 0.13781,1.92064 2.42018,1.92064 1.45556,0 2.55799,-0.68902 v 1.9637 q -1.22301,0.65457 -3.1781,0.65457 -2.13596,0 -3.31591,-1.17994 -1.17995,-1.18856 -1.17995,-3.3073 0,-2.19625 1.27469,-3.47955 1.27469,-1.2833 3.13504,-1.2833 1.92925,0 2.98001,1.1455 1.05937,1.14549 1.05937,3.1092 z m -2.52354,-1.67088 q 0,-1.8948 -1.53307,-1.8948 -0.65456,0 -1.13688,0.5426 -0.4737,0.54261 -0.57705,1.3522 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2168" />
+            <path
+               d="m 111.97772,326.06897 v -2.20486 q 0.67179,0.4048 1.33498,0.60289 0.67179,0.19809 1.26607,0.19809 0.72347,0 1.13688,-0.19809 0.42203,-0.19809 0.42203,-0.60289 0,-0.25839 -0.18948,-0.43064 -0.18949,-0.17226 -0.49093,-0.30145 -0.29283,-0.12919 -0.64596,-0.23254 -0.35312,-0.10335 -0.6804,-0.23254 -0.52538,-0.1981 -0.93018,-0.42203 -0.39619,-0.23254 -0.67179,-0.53399 -0.267,-0.30145 -0.41342,-0.69763 -0.1378,-0.39619 -0.1378,-0.93879 0,-0.7407 0.31867,-1.27469 0.32729,-0.53399 0.86128,-0.86988 0.5426,-0.34451 1.23162,-0.49954 0.69763,-0.16365 1.44694,-0.16365 0.58567,0 1.18856,0.0947 0.60289,0.0861 1.18856,0.25839 v 2.10151 q -0.51677,-0.30145 -1.11105,-0.44787 -0.58566,-0.15503 -1.1541,-0.15503 -0.267,0 -0.50816,0.0517 -0.23254,0.0431 -0.41341,0.13781 -0.18087,0.0861 -0.28422,0.23254 -0.10335,0.1378 -0.10335,0.31867 0,0.24116 0.15503,0.41341 0.15503,0.17226 0.4048,0.30145 0.24977,0.12058 0.55121,0.22393 0.31006,0.0947 0.61151,0.19809 0.5426,0.18948 0.98185,0.41341 0.43925,0.22394 0.74931,0.52538 0.31867,0.30145 0.48231,0.70625 0.17226,0.4048 0.17226,0.96462 0,0.78376 -0.34451,1.34359 -0.3359,0.55122 -0.90434,0.90434 -0.55983,0.34451 -1.30053,0.49954 -0.73208,0.16364 -1.52445,0.16364 -1.45555,0 -2.69579,-0.44786 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2165" />
+            <path
+               d="m 121.6929,316.0868 q -0.68902,0 -1.12827,-0.4048 -0.43925,-0.41341 -0.43925,-1.00769 0,-0.61151 0.43925,-0.99908 0.43925,-0.38757 1.12827,-0.38757 0.69763,0 1.12826,0.38757 0.43925,0.38757 0.43925,0.99908 0,0.62012 -0.43925,1.0163 -0.43063,0.39619 -1.12826,0.39619 z m 1.34358,10.21471 h -2.72162 v -8.81945 h 2.72162 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2162" />
+            <path
+               d="m 133.97467,325.29382 q 0,2.45463 -1.42111,3.79822 -1.4211,1.3522 -4.11689,1.3522 -1.78284,0 -2.82498,-0.50815 v -2.29099 q 1.36082,0.79237 2.74747,0.79237 1.37804,0 2.13596,-0.73208 0.75792,-0.72347 0.75792,-1.97232 v -0.69763 h -0.0344 q -0.93018,1.48139 -2.74747,1.48139 -1.68809,0 -2.67856,-1.18856 -0.99047,-1.18856 -0.99047,-3.18671 0,-2.23932 1.10244,-3.55707 1.10243,-1.31775 2.90249,-1.31775 1.61058,0 2.41157,1.24024 h 0.0344 v -1.02492 h 2.72163 z m -2.68718,-3.22978 v -0.69763 q 0,-0.83544 -0.49954,-1.4211 -0.49093,-0.59428 -1.2833,-0.59428 -0.90434,0 -1.4211,0.70624 -0.51677,0.70625 -0.51677,1.98955 0,1.10243 0.49093,1.74839 0.49093,0.63734 1.34359,0.63734 0.84405,0 1.36081,-0.64596 0.52538,-0.65457 0.52538,-1.72255 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2159" />
+            <path
+               d="m 144.76644,326.30151 h -2.71302 v -4.90065 q 0,-2.04983 -1.46416,-2.04983 -0.70625,0 -1.16272,0.5426 -0.45648,0.5426 -0.45648,1.37804 v 5.02984 h -2.72163 v -8.81945 h 2.72163 v 1.39527 h 0.0345 q 0.97324,-1.61059 2.8336,-1.61059 2.92833,0 2.92833,3.63458 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2156" />
+            <path
+               d="m 148.13402,326.51683 q -0.67179,0 -1.11966,-0.41341 -0.44786,-0.41341 -0.44786,-1.0163 0,-0.62012 0.45648,-1.01631 0.46508,-0.39618 1.1541,-0.39618 0.69764,0 1.13689,0.4048 0.44786,0.39618 0.44786,1.00769 0,0.62873 -0.45648,1.03353 -0.44786,0.39618 -1.17133,0.39618 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2153" />
+            <path
+               d="m 158.38319,325.98284 q -0.92157,0.53399 -2.66134,0.53399 -2.03261,0 -3.29007,-1.23162 -1.25746,-1.23162 -1.25746,-3.1781 0,-2.24793 1.34359,-3.53984 1.3522,-1.30053 3.60874,-1.30053 1.55891,0 2.25654,0.41342 v 2.30821 q -0.85266,-0.63734 -1.90342,-0.63734 -1.17133,0 -1.86035,0.68902 -0.68041,0.68041 -0.68041,1.88619 0,1.17133 0.65457,1.84313 0.65457,0.66318 1.80006,0.66318 1.01631,0 1.98955,-0.63734 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2150" />
+            <path
+               d="m 168.63235,326.30151 h -2.71301 v -5.01261 q 0,-1.93787 -1.41249,-1.93787 -0.72347,0 -1.17133,0.5426 -0.44787,0.5426 -0.44787,1.37804 v 5.02984 h -2.72162 v -13.05692 h 2.72162 v 5.54661 h 0.0344 q 0.99908,-1.52446 2.71302,-1.52446 2.99723,0 2.99723,3.61736 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path2147" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 7.9375,156.10417 h 301.625"
+       id="path11086" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,34.347123,-86.654939)"
+       id="text15210"
+       style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect15212);fill:#ffffff;fill-opacity:1"><tspan
+         x="149.87695"
+         y="1798.7732"
+         id="tspan141283"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141281">Uhrzeit richten...</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 9.7855769,417.78435 H 307.71455"
+       id="path22534" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.7783242,-130.20734)"
+       id="text32075"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect32077)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141287"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141285">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,3.1737099,-74.029317)"
+       id="text38025"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect38027)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141291"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141289">2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,2.9721719,-19.916577)"
+       id="text38031"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect38033)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141295"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141293">3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,5.3699583,-160.10522)"
+       id="text42474"
+       style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect42476)"><tspan
+         x="34.347656"
+         y="1311.6717"
+         id="tspan141299"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141297">In 3 Schritten zur neuen Zeit:</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,35.937413,-123.17874)"
+       id="text49144"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect49146)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141303"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141301">Vorgang per Knopfdruck starten</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,35.968419,-77.740627)"
+       id="text51474"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect51476)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141307"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141305">CLOCKdesign auswählen und </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141311"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141309">verbinden</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,35.875401,-21.126797)"
+       id="text53140"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect53142);fill:#777777;fill-opacity:1"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141315"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141313">Die Zeit ihrer Uhr ist aktualisiert
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141319"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141317">Weiterhin viel Freude damit!</tspan></tspan></text>
+    <g
+       id="g92987">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect82706"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,36.315995,-14.217303)"
+         id="text82710"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect82714);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141323"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141321">Modus ändern...</tspan></tspan></text>
+    </g>
+    <g
+       id="g89821"
+       transform="translate(0,54.082968)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect89815"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,92.974035,-14.217303)"
+         id="text89819"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect89823);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141327"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141325">Hilfe</tspan></tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect90737"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="484.61377"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,62.283402,38.699365)"
+         id="text90741"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect90743);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141331"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141329">Impressum</tspan></tspan></text>
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="g93121"
+       transform="matrix(1.739522,0,0,1.739522,390.63628,-502.31098)"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.217274;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         id="g93093"
+         style="font-size:10.5833px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.152102" />
+      <g
+         id="g93119"
+         transform="matrix(1.1269232,0,0,1.1269158,4.1114587,-29.661132)"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.192803">
+        <g
+           id="g93117"
+           transform="matrix(1.0310137,0,0,1.0310137,-2.9157364,-7.7557599)"
+           style="stroke-width:0.187003">
+          <path
+             id="path93095"
+             style="fill:#000000;fill-opacity:1;stroke-width:0.0500369;stroke-miterlimit:4;stroke-dasharray:none"
+             d="M 38.707031,38.705078 V 108.67383 H 108.67383 V 38.705078 Z m 19.1875,28.527344 c 1.2194,0 2.247824,0.153181 3.083985,0.460937 v 2.708985 c -0.836161,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720027,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.340151,2.172548 1.019531,2.892579 0.67938,0.714221 1.59442,1.070312 2.744141,1.070312 1.09746,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.101226,0.662106 -3.570313,0.66211 -1.916201,0 -3.424024,-0.562962 -4.521484,-1.689454 -1.097461,-1.126492 -1.646485,-2.626396 -1.646485,-4.501953 0,-1.997491 0.616643,-3.618699 1.847657,-4.861328 1.23682,-1.242629 2.838179,-1.863281 4.80664,-1.863281 z m 19.416016,0 c 1.782647,0 3.220899,0.582861 4.318359,1.75 1.103267,1.167139 1.65625,2.706789 1.65625,4.617187 0,1.962656 -0.572883,3.544119 -1.716797,4.746094 -1.138107,1.201982 -2.624077,1.802735 -4.458984,1.802735 -1.788454,0 -3.246553,-0.580854 -4.373047,-1.742188 -1.126494,-1.167139 -1.689453,-2.684941 -1.689453,-4.554688 0,-1.974271 0.572883,-3.571619 1.716797,-4.791015 1.143914,-1.219403 2.659708,-1.828125 4.546875,-1.828125 z m 13.917969,0 c 1.2194,0 2.247824,0.153181 3.083984,0.460937 v 2.708985 c -0.83616,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720026,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.34015,2.172551 1.019532,2.892579 0.67938,0.714221 1.59442,1.070312 2.74414,1.070312 1.097461,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.103179,0.662109 -3.572266,0.66211 -1.9162,0 -3.42207,-0.562962 -4.519531,-1.689454 -1.09746,-1.126492 -1.646484,-2.626396 -1.646484,-4.501953 0,-1.997491 0.61469,-3.618699 1.845703,-4.861328 1.236821,-1.242629 2.840133,-1.863281 4.808594,-1.863281 z M 63.15625,67.441406 h 2.8125 v 10.207032 h 4.625 v 2.283203 h -7.4375 z m 33.332031,0 h 2.814453 v 5.904297 h 0.04297 c 0.06968,-0.162589 0.187023,-0.393367 0.349609,-0.695312 l 3.447267,-5.208985 h 3.35351 l -4.35351,5.957032 4.72851,6.533203 h -3.55273 l -3.640625,-5.427735 c -0.06968,-0.10452 -0.181057,-0.333298 -0.332031,-0.6875 h -0.04297 v 6.115235 h -2.814453 z m -19.257812,2.212891 c -0.987134,0 -1.770896,0.370022 -2.351563,1.113281 -0.580666,0.737441 -0.871094,1.716144 -0.871094,2.935547 0,1.236817 0.290428,2.215513 0.871094,2.935547 0.580667,0.720027 1.342523,1.080078 2.283203,1.080078 0.969714,0 1.739541,-0.348121 2.308594,-1.044922 0.569054,-0.702612 0.853516,-1.675346 0.853516,-2.917969 0,-1.294892 -0.276492,-2.301457 -0.828125,-3.021484 -0.551634,-0.720027 -1.307525,-1.080078 -2.265625,-1.080078 z"
+             transform="matrix(0.98883371,0,0,0.98883371,-18.880307,247.24038)" />
+          <g
+             aria-label="design.ch"
+             id="g93115"
+             style="font-size:17.6389px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.130911">
+            <path
+               d="m 100.72086,326.30151 h -2.721626 v -1.21439 h -0.03445 q -0.930176,1.42971 -2.73024,1.42971 -1.653647,0 -2.661338,-1.16272 -1.007691,-1.17133 -1.007691,-3.26423 0,-2.18764 1.111044,-3.50539 1.111044,-1.31775 2.911108,-1.31775 1.705323,0 2.377117,1.22301 h 0.03445 v -5.24516 h 2.721626 z m -2.669949,-4.28914 v -0.66318 q 0,-0.86128 -0.49954,-1.42972 -0.499539,-0.56844 -1.300524,-0.56844 -0.904338,0 -1.41249,0.71486 -0.508152,0.70624 -0.508152,1.94648 0,1.16272 0.490926,1.79145 0.490927,0.62873 1.360814,0.62873 0.826824,0 1.343588,-0.66318 0.525378,-0.66318 0.525378,-1.757 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93097" />
+            <path
+               d="m 110.93558,322.66694 h -5.75332 q 0.13781,1.92064 2.42018,1.92064 1.45556,0 2.55799,-0.68902 v 1.9637 q -1.22301,0.65457 -3.1781,0.65457 -2.13596,0 -3.31591,-1.17994 -1.17995,-1.18856 -1.17995,-3.3073 0,-2.19625 1.27469,-3.47955 1.27469,-1.2833 3.13504,-1.2833 1.92925,0 2.98001,1.1455 1.05937,1.14549 1.05937,3.1092 z m -2.52354,-1.67088 q 0,-1.8948 -1.53307,-1.8948 -0.65456,0 -1.13688,0.5426 -0.4737,0.54261 -0.57705,1.3522 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93099" />
+            <path
+               d="m 111.97772,326.06897 v -2.20486 q 0.67179,0.4048 1.33498,0.60289 0.67179,0.19809 1.26607,0.19809 0.72347,0 1.13688,-0.19809 0.42203,-0.19809 0.42203,-0.60289 0,-0.25839 -0.18948,-0.43064 -0.18949,-0.17226 -0.49093,-0.30145 -0.29283,-0.12919 -0.64596,-0.23254 -0.35312,-0.10335 -0.6804,-0.23254 -0.52538,-0.1981 -0.93018,-0.42203 -0.39619,-0.23254 -0.67179,-0.53399 -0.267,-0.30145 -0.41342,-0.69763 -0.1378,-0.39619 -0.1378,-0.93879 0,-0.7407 0.31867,-1.27469 0.32729,-0.53399 0.86128,-0.86988 0.5426,-0.34451 1.23162,-0.49954 0.69763,-0.16365 1.44694,-0.16365 0.58567,0 1.18856,0.0947 0.60289,0.0861 1.18856,0.25839 v 2.10151 q -0.51677,-0.30145 -1.11105,-0.44787 -0.58566,-0.15503 -1.1541,-0.15503 -0.267,0 -0.50816,0.0517 -0.23254,0.0431 -0.41341,0.13781 -0.18087,0.0861 -0.28422,0.23254 -0.10335,0.1378 -0.10335,0.31867 0,0.24116 0.15503,0.41341 0.15503,0.17226 0.4048,0.30145 0.24977,0.12058 0.55121,0.22393 0.31006,0.0947 0.61151,0.19809 0.5426,0.18948 0.98185,0.41341 0.43925,0.22394 0.74931,0.52538 0.31867,0.30145 0.48231,0.70625 0.17226,0.4048 0.17226,0.96462 0,0.78376 -0.34451,1.34359 -0.3359,0.55122 -0.90434,0.90434 -0.55983,0.34451 -1.30053,0.49954 -0.73208,0.16364 -1.52445,0.16364 -1.45555,0 -2.69579,-0.44786 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93101" />
+            <path
+               d="m 121.6929,316.0868 q -0.68902,0 -1.12827,-0.4048 -0.43925,-0.41341 -0.43925,-1.00769 0,-0.61151 0.43925,-0.99908 0.43925,-0.38757 1.12827,-0.38757 0.69763,0 1.12826,0.38757 0.43925,0.38757 0.43925,0.99908 0,0.62012 -0.43925,1.0163 -0.43063,0.39619 -1.12826,0.39619 z m 1.34358,10.21471 h -2.72162 v -8.81945 h 2.72162 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93103" />
+            <path
+               d="m 133.97467,325.29382 q 0,2.45463 -1.42111,3.79822 -1.4211,1.3522 -4.11689,1.3522 -1.78284,0 -2.82498,-0.50815 v -2.29099 q 1.36082,0.79237 2.74747,0.79237 1.37804,0 2.13596,-0.73208 0.75792,-0.72347 0.75792,-1.97232 v -0.69763 h -0.0344 q -0.93018,1.48139 -2.74747,1.48139 -1.68809,0 -2.67856,-1.18856 -0.99047,-1.18856 -0.99047,-3.18671 0,-2.23932 1.10244,-3.55707 1.10243,-1.31775 2.90249,-1.31775 1.61058,0 2.41157,1.24024 h 0.0344 v -1.02492 h 2.72163 z m -2.68718,-3.22978 v -0.69763 q 0,-0.83544 -0.49954,-1.4211 -0.49093,-0.59428 -1.2833,-0.59428 -0.90434,0 -1.4211,0.70624 -0.51677,0.70625 -0.51677,1.98955 0,1.10243 0.49093,1.74839 0.49093,0.63734 1.34359,0.63734 0.84405,0 1.36081,-0.64596 0.52538,-0.65457 0.52538,-1.72255 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93105" />
+            <path
+               d="m 144.76644,326.30151 h -2.71302 v -4.90065 q 0,-2.04983 -1.46416,-2.04983 -0.70625,0 -1.16272,0.5426 -0.45648,0.5426 -0.45648,1.37804 v 5.02984 h -2.72163 v -8.81945 h 2.72163 v 1.39527 h 0.0345 q 0.97324,-1.61059 2.8336,-1.61059 2.92833,0 2.92833,3.63458 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93107" />
+            <path
+               d="m 148.13402,326.51683 q -0.67179,0 -1.11966,-0.41341 -0.44786,-0.41341 -0.44786,-1.0163 0,-0.62012 0.45648,-1.01631 0.46508,-0.39618 1.1541,-0.39618 0.69764,0 1.13689,0.4048 0.44786,0.39618 0.44786,1.00769 0,0.62873 -0.45648,1.03353 -0.44786,0.39618 -1.17133,0.39618 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93109" />
+            <path
+               d="m 158.38319,325.98284 q -0.92157,0.53399 -2.66134,0.53399 -2.03261,0 -3.29007,-1.23162 -1.25746,-1.23162 -1.25746,-3.1781 0,-2.24793 1.34359,-3.53984 1.3522,-1.30053 3.60874,-1.30053 1.55891,0 2.25654,0.41342 v 2.30821 q -0.85266,-0.63734 -1.90342,-0.63734 -1.17133,0 -1.86035,0.68902 -0.68041,0.68041 -0.68041,1.88619 0,1.17133 0.65457,1.84313 0.65457,0.66318 1.80006,0.66318 1.01631,0 1.98955,-0.63734 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93111" />
+            <path
+               d="m 168.63235,326.30151 h -2.71301 v -5.01261 q 0,-1.93787 -1.41249,-1.93787 -0.72347,0 -1.17133,0.5426 -0.44787,0.5426 -0.44787,1.37804 v 5.02984 h -2.72162 v -13.05692 h 2.72162 v 5.54661 h 0.0344 q 0.99908,-1.52446 2.71302,-1.52446 2.99723,0 2.99723,3.61736 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93113" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 431.27083,156.10417 h 301.625"
+       id="path93123" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157;stroke-opacity:1"
+       id="rect93203"
+       width="317.5"
+       height="781.18738"
+       x="846.66669"
+       y="-1.322915" />
+    <g
+       inkscape:label="Layer 1"
+       id="g93235"
+       transform="matrix(1.739522,0,0,1.739522,813.9696,-502.31098)"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.217274;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         id="g93207"
+         style="font-size:10.5833px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.152102" />
+      <g
+         id="g93233"
+         transform="matrix(1.1269232,0,0,1.1269158,4.1114587,-29.661132)"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.192803">
+        <g
+           id="g93231"
+           transform="matrix(1.0310137,0,0,1.0310137,-2.9157364,-7.7557599)"
+           style="stroke-width:0.187003">
+          <path
+             id="path93209"
+             style="fill:#000000;fill-opacity:1;stroke-width:0.0500369;stroke-miterlimit:4;stroke-dasharray:none"
+             d="M 38.707031,38.705078 V 108.67383 H 108.67383 V 38.705078 Z m 19.1875,28.527344 c 1.2194,0 2.247824,0.153181 3.083985,0.460937 v 2.708985 c -0.836161,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720027,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.340151,2.172548 1.019531,2.892579 0.67938,0.714221 1.59442,1.070312 2.744141,1.070312 1.09746,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.101226,0.662106 -3.570313,0.66211 -1.916201,0 -3.424024,-0.562962 -4.521484,-1.689454 -1.097461,-1.126492 -1.646485,-2.626396 -1.646485,-4.501953 0,-1.997491 0.616643,-3.618699 1.847657,-4.861328 1.23682,-1.242629 2.838179,-1.863281 4.80664,-1.863281 z m 19.416016,0 c 1.782647,0 3.220899,0.582861 4.318359,1.75 1.103267,1.167139 1.65625,2.706789 1.65625,4.617187 0,1.962656 -0.572883,3.544119 -1.716797,4.746094 -1.138107,1.201982 -2.624077,1.802735 -4.458984,1.802735 -1.788454,0 -3.246553,-0.580854 -4.373047,-1.742188 -1.126494,-1.167139 -1.689453,-2.684941 -1.689453,-4.554688 0,-1.974271 0.572883,-3.571619 1.716797,-4.791015 1.143914,-1.219403 2.659708,-1.828125 4.546875,-1.828125 z m 13.917969,0 c 1.2194,0 2.247824,0.153181 3.083984,0.460937 v 2.708985 c -0.83616,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720026,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.34015,2.172551 1.019532,2.892579 0.67938,0.714221 1.59442,1.070312 2.74414,1.070312 1.097461,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.103179,0.662109 -3.572266,0.66211 -1.9162,0 -3.42207,-0.562962 -4.519531,-1.689454 -1.09746,-1.126492 -1.646484,-2.626396 -1.646484,-4.501953 0,-1.997491 0.61469,-3.618699 1.845703,-4.861328 1.236821,-1.242629 2.840133,-1.863281 4.808594,-1.863281 z M 63.15625,67.441406 h 2.8125 v 10.207032 h 4.625 v 2.283203 h -7.4375 z m 33.332031,0 h 2.814453 v 5.904297 h 0.04297 c 0.06968,-0.162589 0.187023,-0.393367 0.349609,-0.695312 l 3.447267,-5.208985 h 3.35351 l -4.35351,5.957032 4.72851,6.533203 h -3.55273 l -3.640625,-5.427735 c -0.06968,-0.10452 -0.181057,-0.333298 -0.332031,-0.6875 h -0.04297 v 6.115235 h -2.814453 z m -19.257812,2.212891 c -0.987134,0 -1.770896,0.370022 -2.351563,1.113281 -0.580666,0.737441 -0.871094,1.716144 -0.871094,2.935547 0,1.236817 0.290428,2.215513 0.871094,2.935547 0.580667,0.720027 1.342523,1.080078 2.283203,1.080078 0.969714,0 1.739541,-0.348121 2.308594,-1.044922 0.569054,-0.702612 0.853516,-1.675346 0.853516,-2.917969 0,-1.294892 -0.276492,-2.301457 -0.828125,-3.021484 -0.551634,-0.720027 -1.307525,-1.080078 -2.265625,-1.080078 z"
+             transform="matrix(0.98883371,0,0,0.98883371,-18.880307,247.24038)" />
+          <g
+             aria-label="design.ch"
+             id="g93229"
+             style="font-size:17.6389px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.130911">
+            <path
+               d="m 100.72086,326.30151 h -2.721626 v -1.21439 h -0.03445 q -0.930176,1.42971 -2.73024,1.42971 -1.653647,0 -2.661338,-1.16272 -1.007691,-1.17133 -1.007691,-3.26423 0,-2.18764 1.111044,-3.50539 1.111044,-1.31775 2.911108,-1.31775 1.705323,0 2.377117,1.22301 h 0.03445 v -5.24516 h 2.721626 z m -2.669949,-4.28914 v -0.66318 q 0,-0.86128 -0.49954,-1.42972 -0.499539,-0.56844 -1.300524,-0.56844 -0.904338,0 -1.41249,0.71486 -0.508152,0.70624 -0.508152,1.94648 0,1.16272 0.490926,1.79145 0.490927,0.62873 1.360814,0.62873 0.826824,0 1.343588,-0.66318 0.525378,-0.66318 0.525378,-1.757 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93211" />
+            <path
+               d="m 110.93558,322.66694 h -5.75332 q 0.13781,1.92064 2.42018,1.92064 1.45556,0 2.55799,-0.68902 v 1.9637 q -1.22301,0.65457 -3.1781,0.65457 -2.13596,0 -3.31591,-1.17994 -1.17995,-1.18856 -1.17995,-3.3073 0,-2.19625 1.27469,-3.47955 1.27469,-1.2833 3.13504,-1.2833 1.92925,0 2.98001,1.1455 1.05937,1.14549 1.05937,3.1092 z m -2.52354,-1.67088 q 0,-1.8948 -1.53307,-1.8948 -0.65456,0 -1.13688,0.5426 -0.4737,0.54261 -0.57705,1.3522 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93213" />
+            <path
+               d="m 111.97772,326.06897 v -2.20486 q 0.67179,0.4048 1.33498,0.60289 0.67179,0.19809 1.26607,0.19809 0.72347,0 1.13688,-0.19809 0.42203,-0.19809 0.42203,-0.60289 0,-0.25839 -0.18948,-0.43064 -0.18949,-0.17226 -0.49093,-0.30145 -0.29283,-0.12919 -0.64596,-0.23254 -0.35312,-0.10335 -0.6804,-0.23254 -0.52538,-0.1981 -0.93018,-0.42203 -0.39619,-0.23254 -0.67179,-0.53399 -0.267,-0.30145 -0.41342,-0.69763 -0.1378,-0.39619 -0.1378,-0.93879 0,-0.7407 0.31867,-1.27469 0.32729,-0.53399 0.86128,-0.86988 0.5426,-0.34451 1.23162,-0.49954 0.69763,-0.16365 1.44694,-0.16365 0.58567,0 1.18856,0.0947 0.60289,0.0861 1.18856,0.25839 v 2.10151 q -0.51677,-0.30145 -1.11105,-0.44787 -0.58566,-0.15503 -1.1541,-0.15503 -0.267,0 -0.50816,0.0517 -0.23254,0.0431 -0.41341,0.13781 -0.18087,0.0861 -0.28422,0.23254 -0.10335,0.1378 -0.10335,0.31867 0,0.24116 0.15503,0.41341 0.15503,0.17226 0.4048,0.30145 0.24977,0.12058 0.55121,0.22393 0.31006,0.0947 0.61151,0.19809 0.5426,0.18948 0.98185,0.41341 0.43925,0.22394 0.74931,0.52538 0.31867,0.30145 0.48231,0.70625 0.17226,0.4048 0.17226,0.96462 0,0.78376 -0.34451,1.34359 -0.3359,0.55122 -0.90434,0.90434 -0.55983,0.34451 -1.30053,0.49954 -0.73208,0.16364 -1.52445,0.16364 -1.45555,0 -2.69579,-0.44786 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93215" />
+            <path
+               d="m 121.6929,316.0868 q -0.68902,0 -1.12827,-0.4048 -0.43925,-0.41341 -0.43925,-1.00769 0,-0.61151 0.43925,-0.99908 0.43925,-0.38757 1.12827,-0.38757 0.69763,0 1.12826,0.38757 0.43925,0.38757 0.43925,0.99908 0,0.62012 -0.43925,1.0163 -0.43063,0.39619 -1.12826,0.39619 z m 1.34358,10.21471 h -2.72162 v -8.81945 h 2.72162 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93217" />
+            <path
+               d="m 133.97467,325.29382 q 0,2.45463 -1.42111,3.79822 -1.4211,1.3522 -4.11689,1.3522 -1.78284,0 -2.82498,-0.50815 v -2.29099 q 1.36082,0.79237 2.74747,0.79237 1.37804,0 2.13596,-0.73208 0.75792,-0.72347 0.75792,-1.97232 v -0.69763 h -0.0344 q -0.93018,1.48139 -2.74747,1.48139 -1.68809,0 -2.67856,-1.18856 -0.99047,-1.18856 -0.99047,-3.18671 0,-2.23932 1.10244,-3.55707 1.10243,-1.31775 2.90249,-1.31775 1.61058,0 2.41157,1.24024 h 0.0344 v -1.02492 h 2.72163 z m -2.68718,-3.22978 v -0.69763 q 0,-0.83544 -0.49954,-1.4211 -0.49093,-0.59428 -1.2833,-0.59428 -0.90434,0 -1.4211,0.70624 -0.51677,0.70625 -0.51677,1.98955 0,1.10243 0.49093,1.74839 0.49093,0.63734 1.34359,0.63734 0.84405,0 1.36081,-0.64596 0.52538,-0.65457 0.52538,-1.72255 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93219" />
+            <path
+               d="m 144.76644,326.30151 h -2.71302 v -4.90065 q 0,-2.04983 -1.46416,-2.04983 -0.70625,0 -1.16272,0.5426 -0.45648,0.5426 -0.45648,1.37804 v 5.02984 h -2.72163 v -8.81945 h 2.72163 v 1.39527 h 0.0345 q 0.97324,-1.61059 2.8336,-1.61059 2.92833,0 2.92833,3.63458 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93221" />
+            <path
+               d="m 148.13402,326.51683 q -0.67179,0 -1.11966,-0.41341 -0.44786,-0.41341 -0.44786,-1.0163 0,-0.62012 0.45648,-1.01631 0.46508,-0.39618 1.1541,-0.39618 0.69764,0 1.13689,0.4048 0.44786,0.39618 0.44786,1.00769 0,0.62873 -0.45648,1.03353 -0.44786,0.39618 -1.17133,0.39618 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93223" />
+            <path
+               d="m 158.38319,325.98284 q -0.92157,0.53399 -2.66134,0.53399 -2.03261,0 -3.29007,-1.23162 -1.25746,-1.23162 -1.25746,-3.1781 0,-2.24793 1.34359,-3.53984 1.3522,-1.30053 3.60874,-1.30053 1.55891,0 2.25654,0.41342 v 2.30821 q -0.85266,-0.63734 -1.90342,-0.63734 -1.17133,0 -1.86035,0.68902 -0.68041,0.68041 -0.68041,1.88619 0,1.17133 0.65457,1.84313 0.65457,0.66318 1.80006,0.66318 1.01631,0 1.98955,-0.63734 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93225" />
+            <path
+               d="m 168.63235,326.30151 h -2.71301 v -5.01261 q 0,-1.93787 -1.41249,-1.93787 -0.72347,0 -1.17133,0.5426 -0.44787,0.5426 -0.44787,1.37804 v 5.02984 h -2.72162 v -13.05692 h 2.72162 v 5.54661 h 0.0344 q 0.99908,-1.52446 2.71302,-1.52446 2.99723,0 2.99723,3.61736 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93227" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 854.60415,156.10417 H 1156.2292"
+       id="path93237" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,852.03661,-160.10522)"
+       id="text93259"
+       style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93303)"><tspan
+         x="34.347656"
+         y="1311.6717"
+         id="tspan141335"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141333">Hilfe:</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,851.16167,-127.78007)"
+       id="text93263"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93305)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141339"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141337">Mein Browser wird nicht unterstützt?!</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,853.49333,-104.5817)"
+       id="text93267"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93307)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141347"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141341">Leider sind noch </tspan><tspan
+           style="font-weight:600;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Semi-Bold'"
+           id="tspan141343">nicht alle Browser</tspan><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141345"> in der </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141351"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141349">Lage, sich mit der Uhr zu verbinden.
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1447.6261"
+         id="tspan141355"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141353">Nutzen Sie einen der untenstehenden </tspan></tspan><tspan
+         x="34.347656"
+         y="1524.6108"
+         id="tspan141359"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141357">Browsern:
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1601.5956"
+         id="tspan141363"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141361">- Chrome
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1678.5803"
+         id="tspan141367"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141365">- Edge
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1755.565"
+         id="tspan141371"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141369">- Chrome auf Android</tspan></tspan></text>
+    <g
+       id="g93279"
+       transform="translate(846.66665,173.5269)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93273"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,34.347123,-14.217304)"
+         id="text93277"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93311);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141375"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141373">Uhrzeit richten...</tspan></tspan></text>
+    </g>
+    <g
+       id="g93293"
+       transform="translate(846.66665,227.60987)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93281"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,36.315995,-14.217304)"
+         id="text93285"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93313);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141379"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141377">Modus ändern...</tspan></tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93287"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="484.61377"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,62.283402,38.699365)"
+         id="text93291"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93315);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141383"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141381">Impressum</tspan></tspan></text>
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="g93349"
+       transform="matrix(1.739522,0,0,1.739522,1237.3029,-502.31098)"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.217274;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         id="g93321"
+         style="font-size:10.5833px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.152102" />
+      <g
+         id="g93347"
+         transform="matrix(1.1269232,0,0,1.1269158,4.1114587,-29.661132)"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.192803">
+        <g
+           id="g93345"
+           transform="matrix(1.0310137,0,0,1.0310137,-2.9157364,-7.7557599)"
+           style="stroke-width:0.187003">
+          <path
+             id="path93323"
+             style="fill:#000000;fill-opacity:1;stroke-width:0.0500369;stroke-miterlimit:4;stroke-dasharray:none"
+             d="M 38.707031,38.705078 V 108.67383 H 108.67383 V 38.705078 Z m 19.1875,28.527344 c 1.2194,0 2.247824,0.153181 3.083985,0.460937 v 2.708985 c -0.836161,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720027,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.340151,2.172548 1.019531,2.892579 0.67938,0.714221 1.59442,1.070312 2.744141,1.070312 1.09746,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.101226,0.662106 -3.570313,0.66211 -1.916201,0 -3.424024,-0.562962 -4.521484,-1.689454 -1.097461,-1.126492 -1.646485,-2.626396 -1.646485,-4.501953 0,-1.997491 0.616643,-3.618699 1.847657,-4.861328 1.23682,-1.242629 2.838179,-1.863281 4.80664,-1.863281 z m 19.416016,0 c 1.782647,0 3.220899,0.582861 4.318359,1.75 1.103267,1.167139 1.65625,2.706789 1.65625,4.617187 0,1.962656 -0.572883,3.544119 -1.716797,4.746094 -1.138107,1.201982 -2.624077,1.802735 -4.458984,1.802735 -1.788454,0 -3.246553,-0.580854 -4.373047,-1.742188 -1.126494,-1.167139 -1.689453,-2.684941 -1.689453,-4.554688 0,-1.974271 0.572883,-3.571619 1.716797,-4.791015 1.143914,-1.219403 2.659708,-1.828125 4.546875,-1.828125 z m 13.917969,0 c 1.2194,0 2.247824,0.153181 3.083984,0.460937 v 2.708985 c -0.83616,-0.499376 -1.788995,-0.748047 -2.857422,-0.748047 -1.172947,0 -2.119817,0.368021 -2.839844,1.105469 -0.720026,0.737448 -1.080078,1.736043 -1.080078,2.996093 0,1.207787 0.34015,2.172551 1.019532,2.892579 0.67938,0.714221 1.59442,1.070312 2.74414,1.070312 1.097461,0 2.102025,-0.266563 3.013672,-0.800781 v 2.568359 c -0.911647,0.441308 -2.103179,0.662109 -3.572266,0.66211 -1.9162,0 -3.42207,-0.562962 -4.519531,-1.689454 -1.09746,-1.126492 -1.646484,-2.626396 -1.646484,-4.501953 0,-1.997491 0.61469,-3.618699 1.845703,-4.861328 1.236821,-1.242629 2.840133,-1.863281 4.808594,-1.863281 z M 63.15625,67.441406 h 2.8125 v 10.207032 h 4.625 v 2.283203 h -7.4375 z m 33.332031,0 h 2.814453 v 5.904297 h 0.04297 c 0.06968,-0.162589 0.187023,-0.393367 0.349609,-0.695312 l 3.447267,-5.208985 h 3.35351 l -4.35351,5.957032 4.72851,6.533203 h -3.55273 l -3.640625,-5.427735 c -0.06968,-0.10452 -0.181057,-0.333298 -0.332031,-0.6875 h -0.04297 v 6.115235 h -2.814453 z m -19.257812,2.212891 c -0.987134,0 -1.770896,0.370022 -2.351563,1.113281 -0.580666,0.737441 -0.871094,1.716144 -0.871094,2.935547 0,1.236817 0.290428,2.215513 0.871094,2.935547 0.580667,0.720027 1.342523,1.080078 2.283203,1.080078 0.969714,0 1.739541,-0.348121 2.308594,-1.044922 0.569054,-0.702612 0.853516,-1.675346 0.853516,-2.917969 0,-1.294892 -0.276492,-2.301457 -0.828125,-3.021484 -0.551634,-0.720027 -1.307525,-1.080078 -2.265625,-1.080078 z"
+             transform="matrix(0.98883371,0,0,0.98883371,-18.880307,247.24038)" />
+          <g
+             aria-label="design.ch"
+             id="g93343"
+             style="font-size:17.6389px;font-family:Consolas;-inkscape-font-specification:Consolas;fill:#000000;fill-opacity:1;stroke-width:0.130911">
+            <path
+               d="m 100.72086,326.30151 h -2.721626 v -1.21439 h -0.03445 q -0.930176,1.42971 -2.73024,1.42971 -1.653647,0 -2.661338,-1.16272 -1.007691,-1.17133 -1.007691,-3.26423 0,-2.18764 1.111044,-3.50539 1.111044,-1.31775 2.911108,-1.31775 1.705323,0 2.377117,1.22301 h 0.03445 v -5.24516 h 2.721626 z m -2.669949,-4.28914 v -0.66318 q 0,-0.86128 -0.49954,-1.42972 -0.499539,-0.56844 -1.300524,-0.56844 -0.904338,0 -1.41249,0.71486 -0.508152,0.70624 -0.508152,1.94648 0,1.16272 0.490926,1.79145 0.490927,0.62873 1.360814,0.62873 0.826824,0 1.343588,-0.66318 0.525378,-0.66318 0.525378,-1.757 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93325" />
+            <path
+               d="m 110.93558,322.66694 h -5.75332 q 0.13781,1.92064 2.42018,1.92064 1.45556,0 2.55799,-0.68902 v 1.9637 q -1.22301,0.65457 -3.1781,0.65457 -2.13596,0 -3.31591,-1.17994 -1.17995,-1.18856 -1.17995,-3.3073 0,-2.19625 1.27469,-3.47955 1.27469,-1.2833 3.13504,-1.2833 1.92925,0 2.98001,1.1455 1.05937,1.14549 1.05937,3.1092 z m -2.52354,-1.67088 q 0,-1.8948 -1.53307,-1.8948 -0.65456,0 -1.13688,0.5426 -0.4737,0.54261 -0.57705,1.3522 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93327" />
+            <path
+               d="m 111.97772,326.06897 v -2.20486 q 0.67179,0.4048 1.33498,0.60289 0.67179,0.19809 1.26607,0.19809 0.72347,0 1.13688,-0.19809 0.42203,-0.19809 0.42203,-0.60289 0,-0.25839 -0.18948,-0.43064 -0.18949,-0.17226 -0.49093,-0.30145 -0.29283,-0.12919 -0.64596,-0.23254 -0.35312,-0.10335 -0.6804,-0.23254 -0.52538,-0.1981 -0.93018,-0.42203 -0.39619,-0.23254 -0.67179,-0.53399 -0.267,-0.30145 -0.41342,-0.69763 -0.1378,-0.39619 -0.1378,-0.93879 0,-0.7407 0.31867,-1.27469 0.32729,-0.53399 0.86128,-0.86988 0.5426,-0.34451 1.23162,-0.49954 0.69763,-0.16365 1.44694,-0.16365 0.58567,0 1.18856,0.0947 0.60289,0.0861 1.18856,0.25839 v 2.10151 q -0.51677,-0.30145 -1.11105,-0.44787 -0.58566,-0.15503 -1.1541,-0.15503 -0.267,0 -0.50816,0.0517 -0.23254,0.0431 -0.41341,0.13781 -0.18087,0.0861 -0.28422,0.23254 -0.10335,0.1378 -0.10335,0.31867 0,0.24116 0.15503,0.41341 0.15503,0.17226 0.4048,0.30145 0.24977,0.12058 0.55121,0.22393 0.31006,0.0947 0.61151,0.19809 0.5426,0.18948 0.98185,0.41341 0.43925,0.22394 0.74931,0.52538 0.31867,0.30145 0.48231,0.70625 0.17226,0.4048 0.17226,0.96462 0,0.78376 -0.34451,1.34359 -0.3359,0.55122 -0.90434,0.90434 -0.55983,0.34451 -1.30053,0.49954 -0.73208,0.16364 -1.52445,0.16364 -1.45555,0 -2.69579,-0.44786 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93329" />
+            <path
+               d="m 121.6929,316.0868 q -0.68902,0 -1.12827,-0.4048 -0.43925,-0.41341 -0.43925,-1.00769 0,-0.61151 0.43925,-0.99908 0.43925,-0.38757 1.12827,-0.38757 0.69763,0 1.12826,0.38757 0.43925,0.38757 0.43925,0.99908 0,0.62012 -0.43925,1.0163 -0.43063,0.39619 -1.12826,0.39619 z m 1.34358,10.21471 h -2.72162 v -8.81945 h 2.72162 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93331" />
+            <path
+               d="m 133.97467,325.29382 q 0,2.45463 -1.42111,3.79822 -1.4211,1.3522 -4.11689,1.3522 -1.78284,0 -2.82498,-0.50815 v -2.29099 q 1.36082,0.79237 2.74747,0.79237 1.37804,0 2.13596,-0.73208 0.75792,-0.72347 0.75792,-1.97232 v -0.69763 h -0.0344 q -0.93018,1.48139 -2.74747,1.48139 -1.68809,0 -2.67856,-1.18856 -0.99047,-1.18856 -0.99047,-3.18671 0,-2.23932 1.10244,-3.55707 1.10243,-1.31775 2.90249,-1.31775 1.61058,0 2.41157,1.24024 h 0.0344 v -1.02492 h 2.72163 z m -2.68718,-3.22978 v -0.69763 q 0,-0.83544 -0.49954,-1.4211 -0.49093,-0.59428 -1.2833,-0.59428 -0.90434,0 -1.4211,0.70624 -0.51677,0.70625 -0.51677,1.98955 0,1.10243 0.49093,1.74839 0.49093,0.63734 1.34359,0.63734 0.84405,0 1.36081,-0.64596 0.52538,-0.65457 0.52538,-1.72255 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93333" />
+            <path
+               d="m 144.76644,326.30151 h -2.71302 v -4.90065 q 0,-2.04983 -1.46416,-2.04983 -0.70625,0 -1.16272,0.5426 -0.45648,0.5426 -0.45648,1.37804 v 5.02984 h -2.72163 v -8.81945 h 2.72163 v 1.39527 h 0.0345 q 0.97324,-1.61059 2.8336,-1.61059 2.92833,0 2.92833,3.63458 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93335" />
+            <path
+               d="m 148.13402,326.51683 q -0.67179,0 -1.11966,-0.41341 -0.44786,-0.41341 -0.44786,-1.0163 0,-0.62012 0.45648,-1.01631 0.46508,-0.39618 1.1541,-0.39618 0.69764,0 1.13689,0.4048 0.44786,0.39618 0.44786,1.00769 0,0.62873 -0.45648,1.03353 -0.44786,0.39618 -1.17133,0.39618 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93337" />
+            <path
+               d="m 158.38319,325.98284 q -0.92157,0.53399 -2.66134,0.53399 -2.03261,0 -3.29007,-1.23162 -1.25746,-1.23162 -1.25746,-3.1781 0,-2.24793 1.34359,-3.53984 1.3522,-1.30053 3.60874,-1.30053 1.55891,0 2.25654,0.41342 v 2.30821 q -0.85266,-0.63734 -1.90342,-0.63734 -1.17133,0 -1.86035,0.68902 -0.68041,0.68041 -0.68041,1.88619 0,1.17133 0.65457,1.84313 0.65457,0.66318 1.80006,0.66318 1.01631,0 1.98955,-0.63734 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93339" />
+            <path
+               d="m 168.63235,326.30151 h -2.71301 v -5.01261 q 0,-1.93787 -1.41249,-1.93787 -0.72347,0 -1.17133,0.5426 -0.44787,0.5426 -0.44787,1.37804 v 5.02984 h -2.72162 v -13.05692 h 2.72162 v 5.54661 h 0.0344 q 0.99908,-1.52446 2.71302,-1.52446 2.99723,0 2.99723,3.61736 z"
+               style="-inkscape-font-specification:'Segoe UI Bold';fill:#000000;fill-opacity:1;stroke-width:0.130911"
+               id="path93341" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1277.9375,156.10417 h 301.625"
+       id="path93351" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,1275.3699,-160.10522)"
+       id="text93373"
+       style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93417)"><tspan
+         x="34.347656"
+         y="1311.6717"
+         id="tspan141387"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141385">Impressum:</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,1276.3362,-125.4794)"
+       id="text93377"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93419)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141391"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141389">CLOCKdesign 
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141395"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141393">Marco Niederberger
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1447.6261"
+         id="tspan141399"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141397">Giessenweg 8
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1524.6108"
+         id="tspan141403"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141401">6403 Küsssnacht</tspan></tspan></text>
+    <g
+       id="g93393"
+       transform="translate(1270)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93387"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,34.347123,-14.217303)"
+         id="text93391"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93425);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141407"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141405">Uhrzeit richten...</tspan></tspan></text>
+    </g>
+    <g
+       id="g140312">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93395"
+         width="280.89011"
+         height="44.611961"
+         x="1286.6527"
+         y="485.78015"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,1306.316,39.865665)"
+         id="text93399"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93427);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141411"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141409">Modus ändern...</tspan></tspan></text>
+    </g>
+    <g
+       id="g140317">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect93401"
+         width="280.89011"
+         height="44.611961"
+         x="1286.6527"
+         y="538.69672"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,1332.2834,92.782333)"
+         id="text93405"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93429);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141415"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141413">Impressum</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,427.11164,-130.20734)"
+       id="text93519"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93547)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141419"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141417">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,426.50703,-74.029317)"
+       id="text93523"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93549)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141423"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141421">2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,426.30549,-19.916577)"
+       id="text93527"
+       style="font-size:120px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93551)"><tspan
+         x="34.347656"
+         y="1347.7019"
+         id="tspan141427"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141425">3</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,428.70328,-160.10522)"
+       id="text93531"
+       style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93553)"><tspan
+         x="34.347656"
+         y="1311.6717"
+         id="tspan141431"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141429">Neuen Modus einstellen:</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,459.27073,-123.17874)"
+       id="text93535"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93555)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141435"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141433">Vorgang per Knopfdruck starten</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,459.30174,-77.740627)"
+       id="text93539"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93557)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141439"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141437">CLOCKdesign auswählen und </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141443"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141441">verbinden</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,459.20872,-21.126797)"
+       id="text93543"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect93559);fill:#777777;fill-opacity:1"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141447"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141445">Der Modus der Uhr ist geändert.
+</tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141451"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141449">Weiterhin viel Freude damit!</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 433.11895,527.3232 H 731.04792"
+       id="path103282" />
+    <g
+       id="g103290"
+       transform="translate(423.33337,109.53885)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect103284"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,34.347123,-14.217304)"
+         id="text103288"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect103306);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141455"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141453">Uhrzeit richten...</tspan></tspan></text>
+    </g>
+    <g
+       id="g103304"
+       transform="translate(423.33337,163.62182)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect103292"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="431.69717"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,92.974035,-14.217303)"
+         id="text103296"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect103308);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141459"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141457">Hilfe</tspan></tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.0157"
+         id="rect103298"
+         width="280.89011"
+         height="44.611961"
+         x="16.652716"
+         y="484.61377"
+         rx="8.2614746"
+         ry="8.2614746" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,62.283402,38.699365)"
+         id="text103302"
+         style="font-size:80px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect103310);fill:#ffffff;fill-opacity:1"><tspan
+           x="149.87695"
+           y="1798.7732"
+           id="tspan141463"><tspan
+             style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+             id="tspan141461">Impressum</tspan></tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,851.16167,48.604122)"
+       id="text121249"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect121259)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141467"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141465">Ich sehe keine CLOCKdesign...</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,853.49333,71.802492)"
+       id="text121255"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect121261)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141471"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141469">Bitte stellen Sie sicher, dass Bluetooth bei </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141475"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141473">ihrem Gerät eingestellt ist. Je nach </tspan></tspan><tspan
+         x="34.347656"
+         y="1447.6261"
+         id="tspan141479"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141477">Betriebssystem benötigt es zudem ein </tspan></tspan><tspan
+         x="34.347656"
+         y="1524.6108"
+         id="tspan141483"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141481">Zugriff auf die Position, um die Uhr zu </tspan></tspan><tspan
+         x="34.347656"
+         y="1601.5956"
+         id="tspan141487"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141485">finden.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,851.16167,48.604122)"
+       id="text123461"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect123467)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141491"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141489">Ich sehe keine CLOCKdesign...</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,853.49333,71.802492)"
+       id="text123465"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect123469)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141495"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141493">Bitte stellen Sie sicher, dass Bluetooth bei </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141499"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141497">ihrem Gerät eingestellt ist. Je nach </tspan></tspan><tspan
+         x="34.347656"
+         y="1447.6261"
+         id="tspan141503"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141501">Betriebssystem benötigt es zudem ein </tspan></tspan><tspan
+         x="34.347656"
+         y="1524.6108"
+         id="tspan141507"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141505">Zugriff auf die Position, um die Uhr zu </tspan></tspan><tspan
+         x="34.347656"
+         y="1601.5956"
+         id="tspan141511"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141509">finden.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,851.16167,180.50882)"
+       id="text123473"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect123487)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141515"><tspan
+           style="font-weight:bold;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+           id="tspan141513">Es funktioniert trotzdem nicht...</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,853.49333,203.70719)"
+       id="text123477"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect123489)"><tspan
+         x="34.347656"
+         y="1293.6566"
+         id="tspan141519"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141517">Ich helfe Ihnen gerne weiter. Melden Sie </tspan></tspan><tspan
+         x="34.347656"
+         y="1370.6413"
+         id="tspan141523"><tspan
+           style="font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'"
+           id="tspan141521">sich unter info@clockdesign.ch.</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,853.49333,203.70719)"
+       id="text123485"
+       style="font-size:60px;line-height:1.25;font-family:Consolas;-inkscape-font-specification:Consolas;white-space:pre;shape-inside:url(#rect123493)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.64583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 854.60415,588.83687 H 1156.2292"
+       id="path130369" />
+  </g>
+</svg>
