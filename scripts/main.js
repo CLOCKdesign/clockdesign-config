@@ -3,7 +3,6 @@
 
 const btnConnect = document.getElementById("connect");
 const btnUpdate = document.getElementById("updateTimeButton");
-const btnWrite = document.getElementById("sendToESP");
 
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
@@ -17,7 +16,7 @@ const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transm
 
 btnConnect.addEventListener("click", BLEManager);
 // btnConnect.addEventListener("click", BLEManager);
-btnWrite.addEventListener("click", sendToESP);
+btnUpdate.addEventListener("click", sendToESP);
 btnStrandtest.addEventListener("click", sendStrandtest);
 btnMatrix.addEventListener("click", sendMatrix);
 btnWordclock.addEventListener("click", sendWordclock);
