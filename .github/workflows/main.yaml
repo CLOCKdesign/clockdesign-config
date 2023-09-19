@@ -11,29 +11,27 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v3
 
-    - name: Test version
-      run: |
-        echo $(git rev-parse --short "$GITHUB_SHA")
-        git_hash=$(git rev-parse --short "$GITHUB_SHA")
-        echo $git_hash
-
     - name: Get version info
       run: |
         git_hash=$(git rev-parse --short "$GITHUB_SHA")
         git_branch=${GITHUB_REF#refs/heads/}
         sed -i "s|DEFAULT_GITHASH|$git_hash|g" index.html
         sed -i "s|DEFAULT_BRANCH|$git_branch|g" index.html
-
-    # - name: Find and Replace
-    #   uses: jacobtomlinson/gha-find-replace@v3
-    #   with:
-    #     find: "DEFAULT_GITHASH"
-    #     replace: $(git rev-parse --short "$GITHUB_SHA")
-    #     regex: false
     
-    - name: Sync files
+    - name: Sync files to live site
+      if: github.ref == 'refs/heads/main'
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSPHRASE }}
+        server-dir: live/
+
+    - name: Sync files to dev site
+      if: github.ref == 'refs/heads/dev'
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSPHRASE }}
+        server-dir: dev/
