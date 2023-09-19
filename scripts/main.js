@@ -137,6 +137,7 @@ function sendWordclock() {
 async function sendNewTime() {
     await connectToCLOCK();
     extractTime();
+    alert("Uhrzeit erfolgreich aktualisiert");
     // await disconnectFromCLOCK();
 }
 
