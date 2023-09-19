@@ -40,7 +40,6 @@ if (btnWordclock) {
     btnWordclock.addEventListener("click", sendWordclock);
 }
 
-/// @todo Add disconnect action
 async function connectToCLOCK() {
     connectionStatus.textContent = "Wordclock wird gesucht...";
     try {
@@ -72,10 +71,6 @@ async function connectToCLOCK() {
         console.log(String(error));
     }
 
-}
-
-async function disconnectFromCLOCK() {
-    await device.gatt.disconnect();
 }
 
 var text = "";
@@ -136,9 +131,14 @@ function sendWordclock() {
 
 async function sendNewTime() {
     await connectToCLOCK();
-    extractTime();
-    alert("Uhrzeit erfolgreich aktualisiert");
-    // await disconnectFromCLOCK();
+    if (device) {
+        extractTime();
+        alert("Uhrzeit erfolgreich aktualisiert");
+        setTimeout(async function () {
+            await device.gatt.disconnect();
+            console.log("Disconnected");
+        }, 300);
+    }
 }
 
 function extractTime() {
@@ -167,19 +167,3 @@ function extractTime() {
     }
     console.log(packetArray);
 }
-
-function updateTime() {
-    var today = new Date();
-
-    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    options.timeZone = 'UTC';
-    options.timeZoneName = 'short';
-
-    var now = today.toLocaleString('de-CH');
-    // document.getElementById("timeBrowser").innerHTML = now;
-    setTimeout(updateTime, 1000);
-}
-
-updateTime();
-
-extractTime();
