@@ -125,3 +125,11 @@ a:link {
     float: right;
 }
 
+.hidden {
+    display: none;
+}
+
+.console {
+    font-family: Consolas,monaco,monospace;
+    font-size: 30px;
+}

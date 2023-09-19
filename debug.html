@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CLOCKdesign Debug</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="body">
+        <img src="images/logoWide.png" width="50%" alt="The CLOCKdesign logo">
+    </div>
+    <br>
+    <hr>
+    <div class="console">
+        Verbindungsstatus: <div id="connectionStatus">Nicht verbunden</div><br>
+        Gesendete Daten: <div id="sentData">-</div><br>
+        Gelesene Daten: <br><div id="receivedData">-</div><br>
+    </div>
+    <hr>
+    <button class="button_wide" id="btnUpdateTime">Uhrzeit richten</button>
+    <button class="button_wide" id="btnChangeModi">Modus ändern...</button>
+    <hr>
+    <button class="button_wide" id="connect">Verbinden</button>
+    <button class="button_wide" id="send0x30">0x30</button>
+    <button class="button_wide" id="stateStrandtest">Test</button>
+    <button class="button_wide" id="stateMatrix">Matrix</button>
+    <button class="button_wide" id="stateWordclock">Wordclock</button>
+
+    <hr>
+
+    <div class="footer">
+        Copyright © 2023 CLOCKdesign<br>
+        <a href="https://github.com/CLOCKdesign/clockdesign-config/commit/DEFAULT_GITHASH"
+            target="_blank">DEFAULT_GITHASH</a> on
+        <a href="https://github.com/CLOCKdesign/clockdesign-config" target="_blank">DEFAULT_BRANCH</a>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
