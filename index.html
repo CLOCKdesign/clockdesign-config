@@ -28,7 +28,9 @@
     <hr>
     <button class="button_wide" id="btnChangeModi">Modus ändern...</button>
     <button class="button_wide" id="btnHelp">Hilfe</button>
-    <button class="button_wide" id="btnAbout">Impressum</button>
+    <a href="https://clockdesign.ch/impressum/" target="_blank">
+        <button class="button_wide" id="btnAbout">Impressum</button>
+    </a>
 
     <h1> Debug </h1>
     <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
@@ -41,10 +43,12 @@
     <button class="button_wide" id="stateWordclock">Wordclock</button>
 
     <hr>
-    <p>
-        <a href="https://github.com/CLOCKdesign/clockdesign-config/commit/DEFAULT_GITHASH" target="_blank">DEFAULT_GITHASH</a>
+
+    <div class="footer">
+        Copyright © 2023 CLOCKdesign<br>
+        <a href="https://github.com/CLOCKdesign/clockdesign-config/commit/DEFAULT_GITHASH" target="_blank">DEFAULT_GITHASH</a> on
         <a href="https://github.com/CLOCKdesign/clockdesign-config" target="_blank">DEFAULT_BRANCH</a>
-    </p>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>

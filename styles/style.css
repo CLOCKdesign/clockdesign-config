@@ -106,6 +106,17 @@ img {
     margin-bottom: 10px;
 }
 
+a:link {
+    color: #411e18;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.footer {
+    font-size: 20px;
+    text-align: center;
+}
+
 .leftSide {
     float: left;
 }
