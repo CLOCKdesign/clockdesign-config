@@ -2,7 +2,7 @@ on:
     push:
         branches:
             - main
-name: Deploy website on push
+name: Deploy to FTP server
 jobs:
   web-deploy:
     name: Deploy
