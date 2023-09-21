@@ -30,8 +30,8 @@ li {
     /* background-color: #f2f5f7; */
     font-size: 25px;
     font-weight: 900;
-    vertical-align:middle;
-    text-align:center
+    vertical-align: middle;
+    text-align: center
 }
 
 
@@ -110,7 +110,7 @@ a:link {
     color: #411e18;
     background-color: transparent;
     text-decoration: none;
-  }
+}
 
 .footer {
     font-size: 20px;
@@ -130,6 +130,6 @@ a:link {
 }
 
 .console {
-    font-family: Consolas,monaco,monospace;
+    font-family: Consolas, monaco, monospace;
     font-size: 30px;
 }
