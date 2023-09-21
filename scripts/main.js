@@ -14,31 +14,21 @@ const btnUpdateTime = document.getElementById("btnUpdateTime");
 const btnChangeModi = document.getElementById("btnChangeModi");
 
 btnUpdateTime.addEventListener("click", sendNewTime);
-// btnChangeModi.addEventListener("click", sendNewModi);
 
 // buttons on debug
 const btnConnect = document.getElementById("connect");
 const btnSend0x30 = document.getElementById("send0x30");
+const btnPrintTime = document.getElementById("printTime");
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
-
-if (btnConnect) {
-    btnConnect.addEventListener("click", connectToCLOCK);
-}
-if (btnSend0x30) {
-    btnSend0x30.addEventListener("click", send0x30);
-}
-if (btnStrandtest) {
-    btnStrandtest.addEventListener("click", sendStrandtest);
-}
-if (btnMatrix) {
-    btnMatrix.addEventListener("click", sendMatrix);
-}
-if (btnWordclock) {
-    btnWordclock.addEventListener("click", sendWordclock);
-}
+btnConnect.addEventListener("click", connectToCLOCK);
+btnSend0x30.addEventListener("click", send0x30);
+btnPrintTime.addEventListener("click", sendTime);
+btnStrandtest.addEventListener("click", sendStrandtest);
+btnMatrix.addEventListener("click", sendMatrix);
+btnWordclock.addEventListener("click", sendWordclock);
 
 async function connectToCLOCK() {
     connectionStatus.textContent = "Wordclock wird gesucht...";
@@ -96,6 +86,16 @@ function send0x30() {
         console.log(sendText);
         uartTXCharacteristic.writeValueWithoutResponse(sendText);
         sentData.textContent = "0x30 to ESP";
+    }
+}
+
+function sendTime() {
+    if (uartTXCharacteristic) {
+        console.log("Write to esp32");
+        let sendText = new Uint8Array([0x02, 0x40, 0x00, 0x00, 0x00, 0x00, 0x03]);
+        console.log(sendText);
+        uartTXCharacteristic.writeValueWithoutResponse(sendText);
+        sentData.textContent = "0x40 to ESP";
     }
 }
 
@@ -167,3 +167,20 @@ function extractTime() {
     }
     console.log(packetArray);
 }
+
+setTimeout(function () {
+    const currentUrl = window.location.href;
+    if(currentUrl.endsWith('debug')) {
+        var collection = document.getElementsByClassName('debugOnly');
+        for (let el of collection) {
+        el.style.display  = "block";
+        }
+    //   if (x.style.display === "none") {
+    //   } else {
+    //     x.style.display = "none";
+    //   }
+    console.log(currentUrl);
+    console.log(currentUrl.endsWith('debug'));
+    }
+}, 300);
+

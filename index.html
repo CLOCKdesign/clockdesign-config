@@ -25,22 +25,31 @@
             Weiterhin viel Freude damit!</li>
     </ol>
 
-    <div class="hidden">
-        <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
-        <p>Gelesene Daten: <a id="receivedData">-</a></p>
-        <p>Gesendete Daten: <a id="sentData">-</a></p>
+    <div class="debugOnly">
+        <div class="console">
+            <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
+            <p>Gelesene Daten: <a id="receivedData">-</a></p>
+            <p>Gesendete Daten: <a id="sentData">-</a></p>
+        </div>
     </div>
 
     <button class="button_wide" id="btnUpdateTime">Uhrzeit richten</button>
     <hr>
-    <div class="hidden">
-        <button class="button_wide" id="btnChangeModi">Modus ändern...</button>
-    </div>
     <button class="button_wide" id="btnHelp">Hilfe</button>
     <a href="https://clockdesign.ch/impressum/" target="_blank">
         <button class="button_wide" id="btnAbout">Impressum</button>
     </a>
     <hr>
+
+    <div class="debugOnly">
+        <button class="button_wide" id="btnChangeModi">Modus ändern...</button>
+        <button class="button_wide" id="connect">Verbinden</button>
+        <button class="button_wide" id="send0x30">0x30</button>
+        <button class="button_wide" id="printTime">Print time</button>
+        <button class="button_wide" id="stateStrandtest">Test</button>
+        <button class="button_wide" id="stateMatrix">Matrix</button>
+        <button class="button_wide" id="stateWordclock">Wordclock</button>
+    </div>
 
     <div class="footer">
         Copyright © 2023 CLOCKdesign<br>
