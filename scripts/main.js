@@ -218,6 +218,8 @@ if (currentUrl.endsWith('debug')) {
     for (let el of collection) {
         el.style.display = "block";
     }
+    var currentTitle = document.title;
+    document.title = "dev." + currentTitle;
 }
 
 const idleDuration = 60;
