@@ -140,12 +140,14 @@ function sendWordclock() {
 }
 
 async function disconnect() {
-    setTimeout(async function () {
-        connectedDevice = await device.gatt.disconnect();
-        console.log("Disconnected");
-        connectionStatus.textContent = "Disconnected"
-        toggleState();
-    }, 300);
+    if (device) {
+        setTimeout(async function () {
+            connectedDevice = await device.gatt.disconnect();
+            console.log("Disconnected");
+            connectionStatus.textContent = "Disconnected"
+            toggleState();
+        }, 300);
+    }
 }
 
 async function sendNewTime() {
@@ -217,3 +219,13 @@ if (currentUrl.endsWith('debug')) {
         el.style.display = "block";
     }
 }
+
+const idleDuration = 60;
+let idleTimeout;
+const resetIdleTimeout = function () {
+    if (idleTimeout) clearTimeout(idleTimeout)
+    idleTimeout = setTimeout(disconnect, idleDuration * 1000);
+}
+resetIdleTimeout();
+['click', 'touchstart', 'mousemove'].forEach(evt =>
+    document.addEventListener(evt, resetIdleTimeout, false));
