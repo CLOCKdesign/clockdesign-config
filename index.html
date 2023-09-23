@@ -14,7 +14,7 @@
  * GNU General Public License for more details.                               *
  *                                                                            *
  * You should have received a copy of the GNU General Public License          *
- * along with linescaleGUI. If not, see <http://www.gnu.org/licenses/>.       *
+ * along with config.CLOCKdesign. If not, see <http://www.gnu.org/licenses/>. *
  ******************************************************************************/
 /**
  * @file index.html
@@ -42,7 +42,7 @@
 
 <body>
     <div class="body">
-        <img src="images/logoWide.png" width="100%" alt="The CLOCKdesign logo">
+        <img src="images/logoWide.png" width="60%" alt="The CLOCKdesign logo">
     </div>
     <br>
     <hr>
@@ -64,22 +64,22 @@
         </div>
     </div>
 
-    <button class="button_wide" id="btnUpdateTime">Uhrzeit richten</button>
+    <button class="button" id="btnUpdateTime">Uhrzeit richten</button>
     <hr>
-    <button class="button_wide" id="btnHelp">Hilfe</button>
+    <button class="button" id="btnHelp">Hilfe</button>
     <a href="https://clockdesign.ch/impressum/" target="_blank">
-        <button class="button_wide" id="btnAbout">Impressum</button>
+        <button class="button" id="btnAbout">Impressum</button>
     </a>
     <hr>
 
     <div class="debugOnly">
-        <button class="button_wide" id="toggleConnection">Connect / disconnect</button>
-        <button class="button_wide onConnOnly" id="btnChangeModi">Modus ändern...</button>
-        <button class="button_wide onConnOnly" id="send0x30">0x30</button>
-        <button class="button_wide onConnOnly" id="printTime">Print time</button>
-        <button class="button_wide onConnOnly" id="stateStrandtest">Test</button>
-        <button class="button_wide onConnOnly" id="stateMatrix">Matrix</button>
-        <button class="button_wide onConnOnly" id="stateWordclock">Wordclock</button>
+        <button class="button" id="toggleConnection">Connect / disconnect</button>
+        <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button>
+        <button class="button onConnOnly" id="send0x30">0x30</button>
+        <button class="button onConnOnly" id="printTime">Print time</button>
+        <button class="button onConnOnly" id="stateStrandtest">Test</button>
+        <button class="button onConnOnly" id="stateMatrix">Matrix</button>
+        <button class="button onConnOnly" id="stateWordclock">Wordclock</button>
     </div>
 
     <div class="footer">

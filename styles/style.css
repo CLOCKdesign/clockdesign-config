@@ -14,7 +14,7 @@
  * GNU General Public License for more details.                               *
  *                                                                            *
  * You should have received a copy of the GNU General Public License          *
- * along with linescaleGUI. If not, see <http://www.gnu.org/licenses/>.       *
+ * along with config.CLOCKdesign. If not, see <http://www.gnu.org/licenses/>. *
  ******************************************************************************/
 /**
  * @file style.css
@@ -34,11 +34,6 @@ hr {
     border-width: 0;
     color: gray;
     background-color: gray
-}
-
-h1 {
-    font-size: 50px;
-    text-align: center;
 }
 
 h2 {
@@ -78,17 +73,12 @@ h1 {
     margin: 0;
     text-align: left;
     color: #411e18;
-    font-size: 5vw;
+    font-size: min(6vw, 50px);
 }
 
 li {
-    font-size: 3vw;
+    font-size: min(3.5vw, 25px);
 }
-
-li.marker {
-    font-size: 5vw;
-}
-
 
 img {
     display: block;
@@ -110,21 +100,7 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    width: 300px;
-}
-
-.button_wide {
-    transition-duration: 0.4s;
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 4vw;
+    font-size: min(4vw, 25px);
     font-weight: bold;
     width: 100%;
     border-radius: 10px;
