@@ -27,6 +27,7 @@
 html {
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
+    background-color: #f2f5f7;
 }
 
 hr {
@@ -36,39 +37,6 @@ hr {
     background-color: gray
 }
 
-h2 {
-    font-size: 20px;
-}
-
-p,
-li {
-    font-size: 3vw;
-    line-height: 2;
-    letter-spacing: 1px;
-}
-
-#counter {
-    /* background-color: #f2f5f7; */
-    font-size: 25px;
-    font-weight: 900;
-    vertical-align: middle;
-    text-align: center
-}
-
-
-html {
-    background-color: #f2f5f7;
-}
-
-body {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #b2b2b2;
-    padding: 20px 20px 40px 20px;
-    font-family: 'Segoe UI';
-}
-
 h1 {
     margin: 0;
     text-align: left;
@@ -76,8 +44,26 @@ h1 {
     font-size: min(6vw, 40px);
 }
 
+h2 {
+    font-size: 20px;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #b2b2b2;
+    padding: 20px;
+    font-family: 'Segoe UI';
+}
+
 li {
     font-size: min(3.5vw, 20px);
+    line-height: 2;
+}
+
+ol > li::marker {
+    font-weight: 800;
 }
 
 img {
@@ -117,19 +103,11 @@ a:link {
     text-align: center;
 }
 
-.leftSide {
-    float: left;
-}
-
-.rightSide {
-    float: right;
-}
-
 .debugOnly {
     display: none;
 }
 
 .console {
     font-family: Consolas, monaco, monospace;
-    font-size: 30px;
+    font-size: min(4vw, 20px);
 }
