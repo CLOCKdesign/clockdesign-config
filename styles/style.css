@@ -61,7 +61,7 @@ html {
 }
 
 body {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     background-color: #b2b2b2;
@@ -73,11 +73,11 @@ h1 {
     margin: 0;
     text-align: left;
     color: #411e18;
-    font-size: min(6vw, 50px);
+    font-size: min(6vw, 40px);
 }
 
 li {
-    font-size: min(3.5vw, 25px);
+    font-size: min(3.5vw, 20px);
 }
 
 img {
@@ -87,8 +87,6 @@ img {
 
 .button:hover {
     background-color: #411e18;
-    /* Green */
-    color: white;
 }
 
 .button {
@@ -96,16 +94,16 @@ img {
     background-color: black;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: min(3vw, 15px);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: min(4vw, 25px);
+    font-size: min(4vw, 20px);
     font-weight: bold;
     width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: min(2vw, 10px);
+    margin-top: min(2vw, 10px);
+    margin-bottom: min(2vw, 10px);
 }
 
 a:link {
@@ -115,7 +113,7 @@ a:link {
 }
 
 .footer {
-    font-size: 20px;
+    font-size: min(3vw, 15px);
     text-align: center;
 }
 
