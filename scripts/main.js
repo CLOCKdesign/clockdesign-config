@@ -46,6 +46,7 @@ btnUpdateTime.addEventListener("click", sendNewTime);
 // buttons on debug
 const btnToggleConnection = document.getElementById("toggleConnection");
 const btnSend0x30 = document.getElementById("send0x30");
+const btnReadLDR = document.getElementById("readLDR");
 const btnPrintTime = document.getElementById("printTime");
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
@@ -53,6 +54,7 @@ const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
 btnSend0x30.addEventListener("click", send0x30);
+btnReadLDR.addEventListener("click", readLDR);
 btnPrintTime.addEventListener("click", sendTime);
 btnStrandtest.addEventListener("click", sendStrandtest);
 btnMatrix.addEventListener("click", sendMatrix);
@@ -123,6 +125,16 @@ function send0x30() {
         console.log(sendText);
         uartTXCharacteristic.writeValueWithoutResponse(sendText);
         sentData.textContent = "0x30 to ESP";
+    }
+}
+
+function readLDR() {
+    if (uartTXCharacteristic) {
+        console.log("Write to esp32");
+        let sendText = new Uint8Array([0x02, 0x60, 0x00, 0x00, 0x00, 0x00, 0x03]);
+        console.log(sendText);
+        uartTXCharacteristic.writeValueWithoutResponse(sendText);
+        sentData.textContent = "0x40 to ESP";
     }
 }
 

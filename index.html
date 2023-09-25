@@ -55,15 +55,7 @@
         <li>Die Zeit ihrer Uhr ist aktualisiert<br>
             Weiterhin viel Freude damit!</li>
     </ol>
-
-    <div class="debugOnly">
-        <div class="console">
-            <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
-            <p>Gelesene Daten: <a id="receivedData">-</a></p>
-            <p>Gesendete Daten: <a id="sentData">-</a></p>
-        </div>
-    </div>
-
+    
     <button class="button" id="btnUpdateTime">Uhrzeit richten</button>
     <hr>
     <button class="button" id="btnHelp">Hilfe</button>
@@ -77,10 +69,19 @@
         <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button>
         <button class="button onConnOnly" id="send0x30">0x30</button>
         <button class="button onConnOnly" id="printTime">Print time</button>
+        <button class="button onConnOnly" id="readLDR">Read LDR</button>
         <button class="button onConnOnly" id="stateStrandtest">Test</button>
         <button class="button onConnOnly" id="stateMatrix">Matrix</button>
         <button class="button onConnOnly" id="stateWordclock">Wordclock</button>
     </div>
+    
+        <div class="debugOnly">
+            <div class="console">
+                <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
+                <p>Gelesene Daten: <a id="receivedData">-</a></p>
+                <p>Gesendete Daten: <a id="sentData">-</a></p>
+            </div>
+        </div>
 
     <div class="footer">
         Copyright © 2023 CLOCKdesign<br>
