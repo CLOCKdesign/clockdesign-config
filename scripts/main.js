@@ -132,16 +132,6 @@ function sendModePayload(mode, text, firstPayload = 0x00) {
     }
 }
 
-// function send0x30() {
-//     if (uartTXCharacteristic) {
-//         console.log("Write to esp32");
-//         let sendText = new Uint8Array([0x02, 0x30, 0x00, 0x00, 0x00, 0x00, 0x03]);
-//         console.log(sendText);
-//         uartTXCharacteristic.writeValueWithoutResponse(sendText);
-//         sentData.textContent = "0x30 to ESP";
-//     }
-// }
-
 async function disconnect() {
     if (device) {
         setTimeout(async function () {
