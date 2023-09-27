@@ -47,18 +47,22 @@ btnUpdateTime.addEventListener("click", sendNewTime);
 const btnToggleConnection = document.getElementById("toggleConnection");
 const btnSend0x30 = document.getElementById("send0x30");
 const btnReadLDR = document.getElementById("readLDR");
+const btnSetDark = document.getElementById("setDark");
+const btnSetBright = document.getElementById("setBright");
 const btnPrintTime = document.getElementById("printTime");
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
-btnSend0x30.addEventListener("click", send0x30);
-btnReadLDR.addEventListener("click", readLDR);
-btnPrintTime.addEventListener("click", sendTime);
-btnStrandtest.addEventListener("click", sendStrandtest);
-btnMatrix.addEventListener("click", sendMatrix);
-btnWordclock.addEventListener("click", sendWordclock);
+btnSend0x30.addEventListener("click", function(){sendModePayload(0x30, "Get device info")});
+btnReadLDR.addEventListener("click", function(){sendModePayload(0x60, "Read LDR")});
+btnSetDark.addEventListener("click", function(){sendModePayload(0x4B, "It's now dark", 0x01)});
+btnSetBright.addEventListener("click", function(){sendModePayload(0x4B, "It's now bright", 0x02)});
+btnPrintTime.addEventListener("click", function(){sendModePayload(0x40, "Print time")});
+btnStrandtest.addEventListener("click", function(){sendModePayload(0x50, "Blinken", 0x01)});
+btnMatrix.addEventListener("click", function(){sendModePayload(0x50, "Matrix", 0x02)});
+btnWordclock.addEventListener("click", function(){sendModePayload(0x50, "Wordclock", 0x03)});
 
 async function connectToCLOCK(force = false) {
     try {
@@ -118,65 +122,25 @@ function handleNotifications(event) {
     console.log(text);
 }
 
-function send0x30() {
+function sendModePayload(mode, text, firstPayload = 0x00) {
     if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x30, 0x00, 0x00, 0x00, 0x00, 0x03]);
+        console.log("Write 0x" + mode.toString(16));
+        let sendText = new Uint8Array([0x02, mode, firstPayload, 0x00, 0x00, 0x00, 0x03]);
         console.log(sendText);
         uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "0x30 to ESP";
+        sentData.textContent = text;
     }
 }
 
-function readLDR() {
-    if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x60, 0x00, 0x00, 0x00, 0x00, 0x03]);
-        console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "0x40 to ESP";
-    }
-}
-
-function sendTime() {
-    if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x40, 0x00, 0x00, 0x00, 0x00, 0x03]);
-        console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "0x40 to ESP";
-    }
-}
-
-function sendStrandtest() {
-    if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x50, 0x01, 0x00, 0x00, 0x00, 0x03]);
-        console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "Darstellungsmodus: Test";
-    }
-}
-
-function sendMatrix() {
-    if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x50, 0x02, 0x00, 0x00, 0x00, 0x03]);
-        console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "Darstellungsmodus: Matrix";
-    }
-}
-
-function sendWordclock() {
-    if (uartTXCharacteristic) {
-        console.log("Write to esp32");
-        let sendText = new Uint8Array([0x02, 0x50, 0x03, 0x00, 0x00, 0x00, 0x03]);
-        console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        sentData.textContent = "Darstellungsmodus: Wordclock";
-    }
-}
+// function send0x30() {
+//     if (uartTXCharacteristic) {
+//         console.log("Write to esp32");
+//         let sendText = new Uint8Array([0x02, 0x30, 0x00, 0x00, 0x00, 0x00, 0x03]);
+//         console.log(sendText);
+//         uartTXCharacteristic.writeValueWithoutResponse(sendText);
+//         sentData.textContent = "0x30 to ESP";
+//     }
+// }
 
 async function disconnect() {
     if (device) {
