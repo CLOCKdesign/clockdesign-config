@@ -29,6 +29,10 @@
  * https://developer.chrome.com/articles/bluetooth/
 */
 
+import { MessageParser } from "./parser.js"
+
+const parser = new MessageParser();
+
 const deviceService = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
 const deviceTXcharacteristic = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'; // send to ESP32
 const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transmit from ESP32
@@ -46,6 +50,7 @@ btnUpdateTime.addEventListener("click", sendNewTime);
 // buttons on debug
 const btnToggleConnection = document.getElementById("toggleConnection");
 const btnSend0x30 = document.getElementById("send0x30");
+const btnReadGitHash = document.getElementById("readGitHash");
 const btnReadLDR = document.getElementById("readLDR");
 const btnSetDark = document.getElementById("setDark");
 const btnSetBright = document.getElementById("setBright");
@@ -55,14 +60,15 @@ const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
-btnSend0x30.addEventListener("click", function(){sendModePayload(0x30, "Get device info")});
-btnReadLDR.addEventListener("click", function(){sendModePayload(0x60, "Read LDR")});
-btnSetDark.addEventListener("click", function(){sendModePayload(0x4B, "It's now dark", 0x01)});
-btnSetBright.addEventListener("click", function(){sendModePayload(0x4B, "It's now bright", 0x02)});
-btnPrintTime.addEventListener("click", function(){sendModePayload(0x40, "Print time")});
-btnStrandtest.addEventListener("click", function(){sendModePayload(0x50, "Blinken", 0x01)});
-btnMatrix.addEventListener("click", function(){sendModePayload(0x50, "Matrix", 0x02)});
-btnWordclock.addEventListener("click", function(){sendModePayload(0x50, "Wordclock", 0x03)});
+btnSend0x30.addEventListener("click", function () { sendModePayload(0x30, "Get device info") });
+btnReadGitHash.addEventListener("click", function () { sendModePayload(0xA5, "Read gitHash") });
+btnReadLDR.addEventListener("click", function () { sendModePayload(0x60, "Read LDR") });
+btnSetDark.addEventListener("click", function () { sendModePayload(0x4B, "It's now dark", 0x01) });
+btnSetBright.addEventListener("click", function () { sendModePayload(0x4B, "It's now bright", 0x02) });
+btnPrintTime.addEventListener("click", function () { sendModePayload(0x40, "Print time") });
+btnStrandtest.addEventListener("click", function () { sendModePayload(0x50, "Blinken", 0x01) });
+btnMatrix.addEventListener("click", function () { sendModePayload(0x50, "Matrix", 0x02) });
+btnWordclock.addEventListener("click", function () { sendModePayload(0x50, "Wordclock", 0x03) });
 
 async function connectToCLOCK(force = false) {
     try {
@@ -110,12 +116,14 @@ var text = "";
 function handleNotifications(event) {
     let value = event.target.value;
     let a = [];
-    // Convert raw data bytes to hex values just for the sake of showing something.
-    // In the "real" world, you'd use data.getUint8, data.getUint16 or even
-    // TextDecoder to process raw data bytes.
     console.log(value);
     for (let i = 0; i < value.byteLength; i++) {
         a.push(String.fromCharCode(value.getUint8(i)));
+        const message = parser.parseByte(byte);
+        if (message !== null) {
+            console.log(message.mode, message.payload);
+            alert("Get machine code")
+        }
     }
     text += a.join('');
     receivedData.textContent = text;
