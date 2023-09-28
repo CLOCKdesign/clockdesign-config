@@ -33,16 +33,3 @@ export class MessageParser {
         return null
     }
 }
-
-// Example usage:
-const parser = new MessageParser();
-
-// Simulate parsing one byte at a time
-const inputStream = [0x02, 0x01, 0x11, 0x22, 0x33, 0x44, 0x03, 0x02, 0xFF, 0x11, 0x22, 0xFF, 0x44, 0x03];
-
-for (const byte of inputStream) {
-    const message = parser.parseByte(byte);
-    if (message !== null) {
-        console.log(message.mode, message.payload); // Output: { mode: 0x01, payload: [0x11, 0x22, 0x33, 0x44] }
-    }
-}

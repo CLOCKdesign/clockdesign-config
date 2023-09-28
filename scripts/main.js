@@ -33,6 +33,12 @@ import { MessageParser } from "./parser.js"
 
 const parser = new MessageParser();
 
+const Modes = {
+	DeviceInfo: 0x30,
+	ReadLDR: 0x60,
+	m2mGitHash: 0xA5
+}
+
 const deviceService = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
 const deviceTXcharacteristic = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'; // send to ESP32
 const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transmit from ESP32
@@ -49,7 +55,7 @@ btnUpdateTime.addEventListener("click", sendNewTime);
 
 // buttons on debug
 const btnToggleConnection = document.getElementById("toggleConnection");
-const btnSend0x30 = document.getElementById("send0x30");
+const btnDeviceInfo = document.getElementById("deviceInfo");
 const btnReadGitHash = document.getElementById("readGitHash");
 const btnReadLDR = document.getElementById("readLDR");
 const btnSetDark = document.getElementById("setDark");
@@ -60,9 +66,9 @@ const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
-btnSend0x30.addEventListener("click", function () { sendModePayload(0x30, "Get device info") });
-btnReadGitHash.addEventListener("click", function () { sendModePayload(0xA5, "Read gitHash") });
-btnReadLDR.addEventListener("click", function () { sendModePayload(0x60, "Read LDR") });
+btnDeviceInfo.addEventListener("click", function () { sendModePayload(Modes.DeviceInfo, "Get device info") });
+btnReadGitHash.addEventListener("click", function () { sendModePayload(Modes.m2mGitHash, "Read gitHash") });
+btnReadLDR.addEventListener("click", function () { sendModePayload(Modes.ReadLDR, "Read LDR") });
 btnSetDark.addEventListener("click", function () { sendModePayload(0x4B, "It's now dark", 0x01) });
 btnSetBright.addEventListener("click", function () { sendModePayload(0x4B, "It's now bright", 0x02) });
 btnPrintTime.addEventListener("click", function () { sendModePayload(0x40, "Print time") });
@@ -92,6 +98,7 @@ async function connectToCLOCK(force = false) {
             const uartRXtext = await uartRXCharacteristic.startNotifications()
             console.log(uartRXtext);
             const eventRXlistener = await uartRXCharacteristic.addEventListener('characteristicvaluechanged', handleNotifications);
+            sendModePayload(Modes.m2mGitHash, "Read gitHash");
         }
         else {
             disconnect();
@@ -119,15 +126,28 @@ function handleNotifications(event) {
     console.log(value);
     for (let i = 0; i < value.byteLength; i++) {
         a.push(String.fromCharCode(value.getUint8(i)));
-        const message = parser.parseByte(byte);
+        const message = parser.parseByte(value.getUint8(i));
         if (message !== null) {
-            console.log(message.mode, message.payload);
-            alert("Get machine code")
+            handleM2M(message.mode, message.payload);
         }
     }
     text += a.join('');
     receivedData.textContent = text;
     console.log(text);
+}
+
+function handleM2M(mode, payload) {
+    console.log(mode);
+    const combinedValue = (payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3];
+    switch (mode) {
+        case Modes.m2mGitHash:
+            {
+                gitHash.textContent = "0x" + combinedValue.toString(16);
+                break;
+            }
+        default:
+            break;
+    }
 }
 
 function sendModePayload(mode, text, firstPayload = 0x00) {

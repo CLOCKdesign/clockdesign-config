@@ -67,7 +67,7 @@
     <div class="debugOnly">
         <button class="button" id="toggleConnection">Connect / disconnect</button>
         <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button>
-        <button class="button onConnOnly" id="send0x30">0x30</button>
+        <button class="button onConnOnly" id="deviceInfo">Device info</button>
         <button class="button onConnOnly" id="readGitHash">Read gitHash</button>
         <button class="button onConnOnly" id="printTime">Print time</button>
         <button class="button onConnOnly" id="readLDR">Read LDR</button>
@@ -80,6 +80,7 @@
     
         <div class="debugOnly">
             <div class="console">
+                <p>Firmware: <a id="gitHash">N/A</a></p>
                 <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
                 <p>Gelesene Daten: <a id="receivedData">-</a></p>
                 <p>Gesendete Daten: <a id="sentData">-</a></p>
