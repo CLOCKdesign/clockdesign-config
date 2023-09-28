@@ -214,9 +214,11 @@ function toggleState() {
     var button = document.getElementById("toggleConnection");
     if (connectedDevice) {
         button.style.backgroundColor = "green";
+        btnToggleConnection.textContent = "Click to disconnect";
     }
     else {
         button.style.backgroundColor = "red";
+        btnToggleConnection.textContent = "Click to connect";
     }
     var disabled;
     var color;
