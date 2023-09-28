@@ -34,9 +34,9 @@ import { MessageParser } from "./parser.js"
 const parser = new MessageParser();
 
 const Modes = {
-	DeviceInfo: 0x30,
-	ReadLDR: 0x60,
-	m2mGitHash: 0xA5
+    DeviceInfo: 0x30,
+    ReadLDR: 0x60,
+    m2mGitHash: 0xA5
 }
 
 const deviceService = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
@@ -52,6 +52,8 @@ const btnUpdateTime = document.getElementById("btnUpdateTime");
 const btnChangeModi = document.getElementById("btnChangeModi");
 
 btnUpdateTime.addEventListener("click", sendNewTime);
+
+const textarea = document.getElementById('receivedData');
 
 // buttons on debug
 const btnToggleConnection = document.getElementById("toggleConnection");
@@ -133,6 +135,7 @@ function handleNotifications(event) {
     }
     text += a.join('');
     receivedData.textContent = text;
+    textarea.scrollTop = textarea.scrollHeight;
     console.log(text);
 }
 
