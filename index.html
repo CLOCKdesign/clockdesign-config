@@ -55,7 +55,7 @@
         <li>Die Zeit ihrer Uhr ist aktualisiert<br>
             Weiterhin viel Freude damit!</li>
     </ol>
-    
+
     <button class="button" id="btnUpdateTime">Uhrzeit richten</button>
     <hr>
     <button class="button" id="btnHelp">Hilfe</button>
@@ -63,29 +63,39 @@
         <button class="button" id="btnAbout">Impressum</button>
     </a>
     <hr>
+    <p>Ändern Sie die Darstellung ihrer Uhr...</p>
+    <div class="buttons_horizontally">
+        <button class="button" id="stateStrandtest">Blinken</button>
+        <button class="button" id="stateMatrix">Matrix</button>
+        <button class="button" id="stateWordclock">WORDclock</button>
+    </div>
+    <hr>
 
     <div class="debugOnly">
         <button class="button" id="toggleConnection"></button>
-        <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button>
-        <button class="button onConnOnly" id="deviceInfo">Device info</button>
-        <button class="button onConnOnly" id="readGitHash">Read gitHash</button>
-        <button class="button onConnOnly" id="printTime">Print time</button>
-        <button class="button onConnOnly" id="readLDR">Read LDR</button>
-        <button class="button onConnOnly" id="setDark">This is very dark</button>
-        <button class="button onConnOnly" id="setBright">This is very bright</button>
-        <button class="button onConnOnly" id="stateStrandtest">Test</button>
-        <button class="button onConnOnly" id="stateMatrix">Matrix</button>
-        <button class="button onConnOnly" id="stateWordclock">Wordclock</button>
-    </div>
-    
-        <div class="debugOnly">
-            <div class="console">
-                <p>Firmware: <a id="gitHash">N/A</a></p>
-                <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
-                <p>Gelesene Daten: </br> <textarea id="receivedData">-</textarea ></p>
-                <p>Gesendete Daten: <a id="sentData">-</a></p>
-            </div>
+        <!-- <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button> -->
+        <div class="buttons_horizontally">
+            <button class="button onConnOnly" id="deviceInfo">Device info</button>
+            <button class="button onConnOnly" id="readGitHash">Read gitHash</button>
         </div>
+        <div class="buttons_horizontally">
+            <button class="button onConnOnly" id="printTime">Print time</button>
+            <button class="button onConnOnly" id="readLDR">Read LDR</button>
+        </div>
+        <div class="buttons_horizontally">
+            <button class="button onConnOnly" id="setDark">Set dark</button>
+            <button class="button onConnOnly" id="setBright">Set bright</button>
+        </div>
+    </div>
+
+    <div class="debugOnly">
+        <div class="console">
+            <p>Firmware: <a id="gitHash">N/A</a></p>
+            <p>Verbindungsstatus: <a id="connectionStatus">Nicht verbunden</a></p>
+            <p>Gelesene Daten: </br> <textarea id="receivedData">-</textarea></p>
+            <p>Gesendete Daten: <a id="sentData">-</a></p>
+        </div>
+    </div>
 
     <div class="footer">
         Copyright © 2023 CLOCKdesign<br>

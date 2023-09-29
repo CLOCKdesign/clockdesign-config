@@ -48,6 +48,10 @@ h2 {
     font-size: 20px;
 }
 
+p {
+    font-size: min(3.5vw, 20px);
+}
+
 body {
     max-width: 600px;
     margin: 0 auto;
@@ -57,7 +61,7 @@ body {
     font-family: 'Segoe UI';
 }
 
-li {
+li{
     font-size: min(3.5vw, 20px);
     line-height: 2;
 }
@@ -91,6 +95,17 @@ img {
     margin-top: min(2vw, 10px);
     margin-bottom: min(2vw, 10px);
 }
+
+.buttons_horizontally {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+ 
+  .buttons_horizontally > div {
+     flex-grow: 1;
+   }
 
 a:link {
     color: #411e18;

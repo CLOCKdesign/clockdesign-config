@@ -46,6 +46,7 @@ const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transm
 var uartTXCharacteristic;
 var device;
 var connectedDevice;
+var keepAlive = false;
 
 // buttons on main
 const btnUpdateTime = document.getElementById("btnUpdateTime");
@@ -68,20 +69,20 @@ const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
-btnDeviceInfo.addEventListener("click", function () { sendModePayload(Modes.DeviceInfo, "Get device info") });
-btnReadGitHash.addEventListener("click", function () { sendModePayload(Modes.m2mGitHash, "Read gitHash") });
-btnReadLDR.addEventListener("click", function () { sendModePayload(Modes.ReadLDR, "Read LDR") });
-btnSetDark.addEventListener("click", function () { sendModePayload(0x4B, "It's now dark", 0x01) });
-btnSetBright.addEventListener("click", function () { sendModePayload(0x4B, "It's now bright", 0x02) });
-btnPrintTime.addEventListener("click", function () { sendModePayload(0x40, "Print time") });
-btnStrandtest.addEventListener("click", function () { sendModePayload(0x50, "Blinken", 0x01) });
-btnMatrix.addEventListener("click", function () { sendModePayload(0x50, "Matrix", 0x02) });
-btnWordclock.addEventListener("click", function () { sendModePayload(0x50, "Wordclock", 0x03) });
+btnDeviceInfo.addEventListener("click", async function () { sendModePayload(Modes.DeviceInfo, "Get device info") });
+btnReadGitHash.addEventListener("click", async function () { sendModePayload(Modes.m2mGitHash, "Read gitHash") });
+btnReadLDR.addEventListener("click", async function () { sendModePayload(Modes.ReadLDR, "Read LDR") });
+btnSetDark.addEventListener("click", async function () { sendModePayload(0x4B, "It's now dark", 0x01) });
+btnSetBright.addEventListener("click", async function () { sendModePayload(0x4B, "It's now bright", 0x02) });
+btnPrintTime.addEventListener("click", async function () { sendModePayload(0x40, "Print time") });
+btnStrandtest.addEventListener("click", async function () { sendModePayload(0x50, "Blinken", 0x01) });
+btnMatrix.addEventListener("click", async function () { sendModePayload(0x50, "Matrix", 0x02) });
+btnWordclock.addEventListener("click", async function () { sendModePayload(0x50, "Wordclock", 0x03) });
 
-async function connectToCLOCK(force = false) {
+async function connectToCLOCK() {
     try {
         toggleState();
-        if (!connectedDevice || !force) {
+        if (!device) {
             connectionStatus.textContent = "Wordclock wird gesucht...";
             device = await navigator.bluetooth.requestDevice({
                 filters: [
@@ -100,10 +101,13 @@ async function connectToCLOCK(force = false) {
             const uartRXtext = await uartRXCharacteristic.startNotifications()
             console.log(uartRXtext);
             const eventRXlistener = await uartRXCharacteristic.addEventListener('characteristicvaluechanged', handleNotifications);
-            sendModePayload(Modes.m2mGitHash, "Read gitHash");
+            setTimeout(async function () {
+                await sendModePayload(Modes.m2mGitHash, "Read gitHash");
+            }, 300);
+            // 
         }
         else {
-            disconnect();
+            console.log("alreadyConnected");
         }
     }
     catch (error) {
@@ -153,12 +157,14 @@ function handleM2M(mode, payload) {
     }
 }
 
-function sendModePayload(mode, text, firstPayload = 0x00) {
+async function sendModePayload(mode, text, firstPayload = 0x00) {
+    await connectToCLOCK();
     if (uartTXCharacteristic) {
         console.log("Write 0x" + mode.toString(16));
         let sendText = new Uint8Array([0x02, mode, firstPayload, 0x00, 0x00, 0x00, 0x03]);
         console.log(sendText);
-        uartTXCharacteristic.writeValueWithoutResponse(sendText);
+        const writeSuccess = uartTXCharacteristic.writeValueWithoutResponse(sendText);
+        console.log(writeSuccess);
         sentData.textContent = text;
     }
 }
@@ -175,11 +181,11 @@ async function disconnect() {
 }
 
 async function sendNewTime() {
-    await connectToCLOCK(force = true);
+    await connectToCLOCK(true);
     if (device) {
         extractTime();
         alert("Uhrzeit erfolgreich aktualisiert");
-        disconnect();
+        // disconnect();
     }
 }
 
