@@ -39,6 +39,9 @@ const Modes = {
     m2mGitHash: 0xA5
 }
 
+const dirtyFlagMask = 0x10000000;
+const gitHashMask =   0x0FFFFFFF;
+
 const deviceService = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
 const deviceTXcharacteristic = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'; // send to ESP32
 const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transmit from ESP32
@@ -61,8 +64,10 @@ const btnToggleConnection = document.getElementById("toggleConnection");
 const btnDeviceInfo = document.getElementById("deviceInfo");
 const btnReadGitHash = document.getElementById("readGitHash");
 const btnReadLDR = document.getElementById("readLDR");
+const btnReadBrightness = document.getElementById("readBrightness");
 const btnSetDark = document.getElementById("setDark");
 const btnSetBright = document.getElementById("setBright");
+const btnResetCalibration = document.getElementById("resetCalibration");
 const btnPrintTime = document.getElementById("printTime");
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
@@ -72,8 +77,10 @@ btnToggleConnection.addEventListener("click", connectToCLOCK);
 btnDeviceInfo.addEventListener("click", async function () { sendModePayload(Modes.DeviceInfo, "Get device info") });
 btnReadGitHash.addEventListener("click", async function () { sendModePayload(Modes.m2mGitHash, "Read gitHash") });
 btnReadLDR.addEventListener("click", async function () { sendModePayload(Modes.ReadLDR, "Read LDR") });
+btnReadBrightness.addEventListener("click", async function () { sendModePayload(0x4B, "Read sensor value") });
 btnSetDark.addEventListener("click", async function () { sendModePayload(0x4B, "It's now dark", 0x01) });
 btnSetBright.addEventListener("click", async function () { sendModePayload(0x4B, "It's now bright", 0x02) });
+btnResetCalibration.addEventListener("click", async function () { sendModePayload(0x4B, "Reset to default", 0x03) });
 btnPrintTime.addEventListener("click", async function () { sendModePayload(0x40, "Print time") });
 btnStrandtest.addEventListener("click", async function () { sendModePayload(0x50, "Blinken", 0x01) });
 btnMatrix.addEventListener("click", async function () { sendModePayload(0x50, "Matrix", 0x02) });
@@ -146,7 +153,10 @@ function handleM2M(mode, payload) {
     switch (mode) {
         case Modes.m2mGitHash:
             {
-                gitHash.textContent = "0x" + combinedValue.toString(16);
+                gitHash.textContent = "0x" + (combinedValue & gitHashMask).toString(16);
+                if(combinedValue & dirtyFlagMask){
+                    gitHash.textContent += " - dirty";
+                }
                 break;
             }
         default:
@@ -181,7 +191,6 @@ async function sendNewTime() {
     if (device) {
         extractTime();
         alert("Uhrzeit erfolgreich aktualisiert");
-        // disconnect();
     }
 }
 
