@@ -90,7 +90,6 @@ async function connectToCLOCK() {
                 ],
                 optionalServices: [deviceService]
             });
-            console.log(device);
             connectedDevice = await device.gatt.connect();
             connectionStatus.textContent = "CONNECTED";
             const espService = await connectedDevice.getPrimaryService(deviceService);
@@ -99,7 +98,6 @@ async function connectToCLOCK() {
             uartTXCharacteristic = await espService.getCharacteristic(deviceTXcharacteristic);
             connectionStatus.textContent = "UART RX characteristic discovered";
             const uartRXtext = await uartRXCharacteristic.startNotifications()
-            console.log(uartRXtext);
             const eventRXlistener = await uartRXCharacteristic.addEventListener('characteristicvaluechanged', handleNotifications);
             setTimeout(async function () {
                 await sendModePayload(Modes.m2mGitHash, "Read gitHash");
@@ -128,23 +126,22 @@ async function connectToCLOCK() {
 var text = "";
 function handleNotifications(event) {
     let value = event.target.value;
-    let a = [];
-    console.log(value);
     for (let i = 0; i < value.byteLength; i++) {
-        a.push(String.fromCharCode(value.getUint8(i)));
+        text += String.fromCharCode(value.getUint8(i));
         const message = parser.parseByte(value.getUint8(i));
         if (message !== null) {
             handleM2M(message.mode, message.payload);
+            text = text.slice(0, -7); // remove M2M hex communication
+            text += "M2M: 02 " + message.mode.toString(16).toUpperCase() + " ";
+            message.payload.forEach(element => {text += element.toString(16).toUpperCase() + " "});
+            text += "03 \n";
         }
     }
-    text += a.join('');
     receivedData.textContent = text;
     textarea.scrollTop = textarea.scrollHeight;
-    console.log(text);
 }
 
 function handleM2M(mode, payload) {
-    console.log(mode);
     const combinedValue = (payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3];
     switch (mode) {
         case Modes.m2mGitHash:
@@ -164,7 +161,6 @@ async function sendModePayload(mode, text, firstPayload = 0x00) {
         let sendText = new Uint8Array([0x02, mode, firstPayload, 0x00, 0x00, 0x00, 0x03]);
         console.log(sendText);
         const writeSuccess = uartTXCharacteristic.writeValueWithoutResponse(sendText);
-        console.log(writeSuccess);
         sentData.textContent = text;
     }
 }
