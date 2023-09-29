@@ -133,7 +133,7 @@ function handleNotifications(event) {
             handleM2M(message.mode, message.payload);
             text = text.slice(0, -7); // remove M2M hex communication
             text += "M2M: 02 " + message.mode.toString(16).toUpperCase() + " ";
-            message.payload.forEach(element => {text += element.toString(16).toUpperCase() + " "});
+            message.payload.forEach(element => {text += element.toString(16).toUpperCase().padStart(2, '0') + " "});
             text += "03 \n";
         }
     }
