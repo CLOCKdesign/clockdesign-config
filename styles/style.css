@@ -44,10 +44,6 @@ h1 {
     font-size: min(6vw, 40px);
 }
 
-h2 {
-    font-size: 20px;
-}
-
 p {
     font-size: min(3.5vw, 20px);
 }
@@ -120,6 +116,12 @@ a:link {
 
 .debugOnly {
     display: none;
+}
+
+.bleDisabled {
+    display: none;
+    color: rgb(168, 7, 7);
+    font-weight: 700;
 }
 
 .console {

@@ -30,6 +30,7 @@
 */
 
 import { MessageParser } from "./parser.js"
+import { toggleState } from "./display.js";
 
 const parser = new MessageParser();
 
@@ -40,7 +41,7 @@ const Modes = {
 }
 
 const dirtyFlagMask = 0x10000000;
-const gitHashMask =   0x0FFFFFFF;
+const gitHashMask = 0x0FFFFFFF;
 
 const deviceService = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
 const deviceTXcharacteristic = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'; // send to ESP32
@@ -88,8 +89,8 @@ btnWordclock.addEventListener("click", async function () { sendModePayload(0x50,
 
 async function connectToCLOCK() {
     try {
-        toggleState();
-        if (!device) {
+        toggleState(connectedDevice);
+        if (!connectedDevice) {
             connectionStatus.textContent = "Wordclock wird gesucht...";
             device = await navigator.bluetooth.requestDevice({
                 filters: [
@@ -125,7 +126,7 @@ async function connectToCLOCK() {
         console.log(String(error));
     }
     finally {
-        toggleState();
+        toggleState(connectedDevice);
     }
 
 }
@@ -140,7 +141,7 @@ function handleNotifications(event) {
             handleM2M(message.mode, message.payload);
             text = text.slice(0, -7); // remove M2M hex communication
             text += "M2M: 02 " + message.mode.toString(16).toUpperCase() + " ";
-            message.payload.forEach(element => {text += element.toString(16).toUpperCase().padStart(2, '0') + " "});
+            message.payload.forEach(element => { text += element.toString(16).toUpperCase().padStart(2, '0') + " " });
             text += "03 \n";
         }
     }
@@ -154,7 +155,7 @@ function handleM2M(mode, payload) {
         case Modes.m2mGitHash:
             {
                 gitHash.textContent = "0x" + (combinedValue & gitHashMask).toString(16);
-                if(combinedValue & dirtyFlagMask){
+                if (combinedValue & dirtyFlagMask) {
                     gitHash.textContent += " - dirty";
                 }
                 break;
@@ -181,7 +182,7 @@ async function disconnect() {
             connectedDevice = await device.gatt.disconnect();
             console.log("Disconnected");
             connectionStatus.textContent = "Disconnected"
-            toggleState();
+            toggleState(connectedDevice);
         }, 300);
     }
 }
@@ -221,44 +222,9 @@ function extractTime() {
     console.log(packetArray);
 }
 
-function toggleState() {
-    var button = document.getElementById("toggleConnection");
-    if (connectedDevice) {
-        button.style.backgroundColor = "green";
-        btnToggleConnection.textContent = "Click to disconnect";
-    }
-    else {
-        button.style.backgroundColor = "red";
-        btnToggleConnection.textContent = "Click to connect";
-    }
-    var disabled;
-    var color;
-    if (connectedDevice) {
-        disabled = false;
-        color = "black"
-    } else {
-        disabled = true;
-        color = "gray"
-    }
-    var buttons = document.getElementsByClassName("onConnOnly");
-    for (let el of buttons) {
-        el.disabled = disabled;
-        el.style.backgroundColor = color;
-    }
-}
+toggleState(connectedDevice);
 
-toggleState();
-
-const currentUrl = window.location.href;
-if (currentUrl.endsWith('debug')) {
-    var collection = document.getElementsByClassName('debugOnly');
-    for (let el of collection) {
-        el.style.display = "block";
-    }
-    var currentTitle = document.title;
-    document.title = "dev." + currentTitle;
-}
-
+// Disconnect on timeout
 const idleDuration = 60;
 let idleTimeout;
 const resetIdleTimeout = function () {

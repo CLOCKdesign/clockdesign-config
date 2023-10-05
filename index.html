@@ -41,6 +41,7 @@
 </head>
 
 <body>
+    <script type="module" src="scripts/display.js"></script>
     <div class="body">
         <img src="images/logoWide.png" width="60%" alt="The CLOCKdesign logo">
     </div>
@@ -56,24 +57,32 @@
             Weiterhin viel Freude damit!</li>
     </ol>
 
-    <button class="button" id="btnUpdateTime">Uhrzeit richten</button>
+    <div class="bleDisabled">
+        <p>Ihr Browser unterstützt leider kein Bluetooth... <br>
+            Aktuell erlauben nur Chrome, Edge und Opera den Zugriff auf die Bluetooth Schnittstelle. <br><br>
+            Support: <a href="mailto:info@clockdesign.ch?subject=Konfigurator: BLE nicht unterstützt">info@clockdesign.ch</a>
+        </p>
+    </div>
+
+    <button class="button bleEnabled" id="btnUpdateTime">Uhrzeit richten</button>
     <hr>
-    <button class="button" id="btnHelp">Hilfe</button>
+    <a href="mailto:info@clockdesign.ch?subject=Frage zum Konfigurator">
+        <button class="button" id="btnHelp">Support</button>
+    </a>
     <a href="https://clockdesign.ch/impressum/" target="_blank">
         <button class="button" id="btnAbout">Impressum</button>
     </a>
-    <hr>
-    <p>Ändern Sie die Darstellung ihrer Uhr...</p>
-    <div class="buttons_horizontally">
+    <hr class="bleEnabled">
+    <p class="bleEnabled">Ändern Sie die Darstellung ihrer Uhr...</p>
+    <div class="buttons_horizontally bleEnabled">
         <button class="button" id="stateStrandtest">Blinken</button>
         <button class="button" id="stateMatrix">Matrix</button>
         <button class="button" id="stateWordclock">WORDclock</button>
     </div>
     <hr>
 
-    <div class="debugOnly">
+    <div class="debugOnly bleEnabled">
         <button class="button" id="toggleConnection"></button>
-        <!-- <button class="button onConnOnly" id="btnChangeModi">Modus ändern...</button> -->
         <div class="buttons_horizontally">
             <button class="button onConnOnly" id="deviceInfo">Info</button>
             <button class="button onConnOnly" id="readGitHash">GitHash</button>
@@ -106,7 +115,7 @@
         <a href="https://github.com/CLOCKdesign/clockdesign-config" target="_blank">DEFAULT_BRANCH</a>
     </div>
 
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/bluetooth.js"></script>
     <script type="module" src="scripts/parser.js"></script>
 </body>
 
