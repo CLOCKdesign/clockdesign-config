@@ -35,10 +35,16 @@ import { toggleState } from "./display.js";
 const parser = new MessageParser();
 
 const Modes = {
-    DeviceInfo: 0x30,
-    ReadLDR: 0x60,
-    m2mGitHash: 0xA5
+    gitHash: 0x30,
+    gitTag: 0x31,
+    readLDR: 0x60,
+    checkTime: 0x61,
 }
+
+let tagMajor = 0;
+let tagMinor = 0;
+let tagPatch = 0;
+let tagOffset = 0;
 
 const dirtyFlagMask = 0x10000000;
 const gitHashMask = 0x0FFFFFFF;
@@ -50,11 +56,9 @@ const deviceRXcharacteristic = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'; // transm
 var uartTXCharacteristic;
 var device;
 var connectedDevice;
-var keepAlive = false;
 
 // buttons on main
 const btnUpdateTime = document.getElementById("btnUpdateTime");
-const btnChangeModi = document.getElementById("btnChangeModi");
 
 btnUpdateTime.addEventListener("click", sendNewTime);
 
@@ -70,19 +74,21 @@ const btnSetDark = document.getElementById("setDark");
 const btnSetBright = document.getElementById("setBright");
 const btnResetCalibration = document.getElementById("resetCalibration");
 const btnPrintTime = document.getElementById("printTime");
+const btnCheckTime = document.getElementById("checkTime");
 const btnStrandtest = document.getElementById("stateStrandtest");
 const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", connectToCLOCK);
-btnDeviceInfo.addEventListener("click", async function () { sendModePayload(Modes.DeviceInfo, "Get device info") });
-btnReadGitHash.addEventListener("click", async function () { sendModePayload(Modes.m2mGitHash, "Read gitHash") });
-btnReadLDR.addEventListener("click", async function () { sendModePayload(Modes.ReadLDR, "Read LDR") });
-btnReadBrightness.addEventListener("click", async function () { sendModePayload(0x4B, "Read sensor value") });
-btnSetDark.addEventListener("click", async function () { sendModePayload(0x4B, "It's now dark", 0x01) });
-btnSetBright.addEventListener("click", async function () { sendModePayload(0x4B, "It's now bright", 0x02) });
-btnResetCalibration.addEventListener("click", async function () { sendModePayload(0x4B, "Reset to default", 0x03) });
+btnDeviceInfo.addEventListener("click", async function() {await sendModeUint(Modes.gitHash, "Get gitHash", 0x01)});
+btnReadGitHash.addEventListener("click", getVersionInfo);
+btnReadLDR.addEventListener("click", async function () { sendModePayload(Modes.readLDR, "Read LDR") });
+btnReadBrightness.addEventListener("click", async function () { sendModeUint(0x4B, "Read sensor value", 0x04) });
+btnSetDark.addEventListener("click", async function () { sendModeUint(0x4B, "It's now dark", 0x01) });
+btnSetBright.addEventListener("click", async function () { sendModeUint(0x4B, "It's now bright", 0x02) });
+btnResetCalibration.addEventListener("click", async function () { sendModeUint(0x4B, "Reset to default", 0x03) });
 btnPrintTime.addEventListener("click", async function () { sendModePayload(0x40, "Print time") });
+btnCheckTime.addEventListener("click", checkTime);
 btnStrandtest.addEventListener("click", async function () { sendModePayload(0x50, "Blinken", 0x01) });
 btnMatrix.addEventListener("click", async function () { sendModePayload(0x50, "Matrix", 0x02) });
 btnWordclock.addEventListener("click", async function () { sendModePayload(0x50, "Wordclock", 0x03) });
@@ -108,7 +114,7 @@ async function connectToCLOCK() {
             const uartRXtext = await uartRXCharacteristic.startNotifications()
             const eventRXlistener = await uartRXCharacteristic.addEventListener('characteristicvaluechanged', handleNotifications);
             setTimeout(async function () {
-                await sendModePayload(Modes.m2mGitHash, "Read gitHash");
+                await getVersionInfo();
             }, 300);
             // 
         }
@@ -138,11 +144,11 @@ function handleNotifications(event) {
         text += String.fromCharCode(value.getUint8(i));
         const message = parser.parseByte(value.getUint8(i));
         if (message !== null) {
-            handleM2M(message.mode, message.payload);
             text = text.slice(0, -7); // remove M2M hex communication
             text += "M2M: 02 " + message.mode.toString(16).toUpperCase() + " ";
             message.payload.forEach(element => { text += element.toString(16).toUpperCase().padStart(2, '0') + " " });
             text += "03 \n";
+            handleM2M(message.mode, message.payload);
         }
     }
     receivedData.textContent = text;
@@ -152,13 +158,30 @@ function handleNotifications(event) {
 function handleM2M(mode, payload) {
     const combinedValue = (payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3];
     switch (mode) {
-        case Modes.m2mGitHash:
+        case Modes.gitHash:
             {
                 gitHash.textContent = "0x" + (combinedValue & gitHashMask).toString(16);
                 if (combinedValue & dirtyFlagMask) {
                     gitHash.textContent += " - dirty";
                 }
                 break;
+            }
+
+        case Modes.gitTag:
+            {
+                tagMajor = payload[0];
+                tagMinor = payload[1];
+                tagPatch = payload[2];
+                tagOffset = payload[3];
+                gitTag.textContent = "v" + tagMajor + "." + tagMinor + "." + tagPatch;
+                if (tagOffset) {
+                    gitTag.textContent += " offset: " + tagOffset;
+                }
+                break;
+            }
+        case Modes.checkTime:
+            {
+                text += "CLOCK deltaT: " + combinedValue.toString() + " seconds.\n";
             }
         default:
             break;
@@ -176,6 +199,25 @@ async function sendModePayload(mode, text, firstPayload = 0x00) {
     }
 }
 
+async function sendModeUint(mode, text, payloadUint = 0) {
+    await connectToCLOCK();
+    if (uartTXCharacteristic) {
+        console.log("Write 0x" + mode.toString(16));
+        const packetBuffer = new ArrayBuffer(7); // 1 bytes (start), 1 byte ('A'), 4 bytes (Unix time), 1 byte (end)
+        const packetView = new DataView(packetBuffer);
+
+        packetView.setUint8(0, 0x02);
+        packetView.setUint8(1, mode);
+        packetView.setUint32(2, payloadUint, false); // false for little-endian byte order
+        packetView.setUint8(6, 0x03);
+
+        // Create a new Uint8Array from the packetBuffer
+        const packetArray = new Uint8Array(packetBuffer);
+        const writeSuccess = uartTXCharacteristic.writeValueWithoutResponse(packetArray);
+        sentData.textContent = text;
+    }
+}
+
 async function disconnect() {
     if (device) {
         setTimeout(async function () {
@@ -183,6 +225,15 @@ async function disconnect() {
             console.log("Disconnected");
             connectionStatus.textContent = "Disconnected"
             toggleState(connectedDevice);
+        }, 300);
+    }
+}
+
+async function getVersionInfo() {
+    if (uartTXCharacteristic) {
+        await sendModeUint(Modes.gitHash, "Get gitHash");
+        setTimeout(async function () {
+            await sendModeUint(Modes.gitTag, "Get gitTag");
         }, 300);
     }
 }
@@ -195,7 +246,15 @@ async function sendNewTime() {
     }
 }
 
-function extractTime() {
+async function checkTime() {
+    console.log("Check time");
+    await connectToCLOCK();
+    if (uartTXCharacteristic) {
+        extractTime(Modes.checkTime);
+    }
+}
+
+function extractTime(mode = 0x41) {
     const unixTime = Math.floor(Date.now() / 1000);
     console.log(unixTime);
     const timeArray = new Uint32Array([unixTime]);
@@ -204,14 +263,8 @@ function extractTime() {
     const packetView = new DataView(packetBuffer);
 
     packetView.setUint8(0, 0x02);
-
-    // Set the 'A' byte (0x41)
-    packetView.setUint8(1, 0x41);
-
-    // Set the Unix time bytes (4 bytes)
+    packetView.setUint8(1, mode);
     packetView.setUint32(2, timeArray[0], false); // false for little-endian byte order
-
-    // Set the end byte (0x03)
     packetView.setUint8(6, 0x03);
 
     // Create a new Uint8Array from the packetBuffer
