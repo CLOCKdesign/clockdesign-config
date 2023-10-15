@@ -89,9 +89,9 @@ btnSetBright.addEventListener("click", async function () { sendModeUint(0x4B, "I
 btnResetCalibration.addEventListener("click", async function () { sendModeUint(0x4B, "Reset to default", 0x03) });
 btnPrintTime.addEventListener("click", async function () { sendModePayload(0x40, "Print time") });
 btnCheckTime.addEventListener("click", checkTime);
-btnStrandtest.addEventListener("click", async function () { sendModePayload(0x50, "Blinken", 0x01) });
-btnMatrix.addEventListener("click", async function () { sendModePayload(0x50, "Matrix", 0x02) });
-btnWordclock.addEventListener("click", async function () { sendModePayload(0x50, "Wordclock", 0x03) });
+btnStrandtest.addEventListener("click", async function () { sendModeUint(0x50, "Blinken", 0x01) });
+btnMatrix.addEventListener("click", async function () { sendModeUint(0x50, "Matrix", 0x02) });
+btnWordclock.addEventListener("click", async function () { sendModeUint(0x50, "Wordclock", 0x03) });
 
 async function connectToCLOCK() {
     try {
