@@ -23,6 +23,19 @@ export function toggleState(connected) {
         el.disabled = disabled;
         el.style.backgroundColor = color;
     }
+}
+
+export function checkBrowser() {
+    // Check for debug interface
+    const currentUrl = window.location.href;
+    if (currentUrl.endsWith('debug')) {
+        var collection = document.getElementsByClassName('debugOnly');
+        for (let el of collection) {
+            el.style.display = "block";
+        }
+        var currentTitle = document.title;
+        document.title = "dev." + currentTitle;
+    }
 
     // Check BLE availability
     navigator.bluetooth.getAvailability().then((available) => {
@@ -39,15 +52,4 @@ export function toggleState(connected) {
             }
         }
     });
-}
-
-// Check for debug interface
-const currentUrl = window.location.href;
-if (currentUrl.endsWith('debug')) {
-    var collection = document.getElementsByClassName('debugOnly');
-    for (let el of collection) {
-        el.style.display = "block";
-    }
-    var currentTitle = document.title;
-    document.title = "dev." + currentTitle;
 }
