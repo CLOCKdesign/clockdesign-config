@@ -34,13 +34,15 @@ import { toggleState, checkBrowser } from "./display.js";
 
 const parser = new MessageParser();
 
-const Modes = {
-    gitHash: 0x30,
-    gitTag: 0x31,
-    setTime: 0x41,
-    readLDR: 0x60,
-    checkTime: 0x61,
-}
+// global modes for v0.1.0
+let mode_gitHash = 0x30;
+let mode_gitTag = 0x31;
+let mode_setTime = 0x41;
+let mode_readLDR = 0x60;
+let mode_checkTime = 0x61;
+let mode_brightnessCal = 0x4B;
+let mode_setState = 0x50;
+let mode_printTime = 0x40;
 
 let tagMajor = 0;
 let tagMinor = 0;
@@ -81,24 +83,24 @@ const btnMatrix = document.getElementById("stateMatrix");
 const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", toggleConnection);
-btnDeviceInfo.addEventListener("click", async function() {await sendModeUint(Modes.gitHash, "Get gitHash", 0x01)});
+btnDeviceInfo.addEventListener("click", async function () { await sendModeUint(mode_gitHash, "Get gitHash", 0x01) });
 btnReadGitHash.addEventListener("click", getVersionInfo);
-btnReadLDR.addEventListener("click", async function () { sendModePayload(Modes.readLDR, "Read LDR") });
-btnReadBrightness.addEventListener("click", async function () { sendModeUint(0x4B, "Read sensor value", 0x04) });
-btnSetDark.addEventListener("click", async function () { sendModeUint(0x4B, "It's now dark", 0x01) });
-btnSetBright.addEventListener("click", async function () { sendModeUint(0x4B, "It's now bright", 0x02) });
-btnResetCalibration.addEventListener("click", async function () { sendModeUint(0x4B, "Reset to default", 0x03) });
-btnPrintTime.addEventListener("click", async function () { sendModePayload(0x40, "Print time") });
-btnCheckTime.addEventListener("click", function () {sendModeUint(Modes.checkTime, "Check time", getUnixTime())});
-btnStrandtest.addEventListener("click", async function () { sendModeUint(0x50, "Blinken", 0x01) });
-btnMatrix.addEventListener("click", async function () { sendModeUint(0x50, "Matrix", 0x02) });
-btnWordclock.addEventListener("click", async function () { sendModeUint(0x50, "Wordclock", 0x03) });
+btnReadLDR.addEventListener("click", async function () { sendModePayload(mode_readLDR, "Read LDR") });
+btnReadBrightness.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "Read sensor value", 0x04) });
+btnSetDark.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "It's now dark", 0x01) });
+btnSetBright.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "It's now bright", 0x02) });
+btnResetCalibration.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "Reset to default", 0x03) });
+btnPrintTime.addEventListener("click", async function () { sendModePayload(mode_printTime, "Print time", 0x1) });
+btnCheckTime.addEventListener("click", function () { sendModeUint(mode_checkTime, "Check time", getUnixTime()) });
+btnStrandtest.addEventListener("click", async function () { sendModeUint(mode_setState, "Blinken", 0x01) });
+btnMatrix.addEventListener("click", async function () { sendModeUint(mode_setState, "Matrix", 0x02) });
+btnWordclock.addEventListener("click", async function () { sendModeUint(mode_setState, "Wordclock", 0x03) });
 
 async function toggleConnection() {
-    if (!connectedDevice){
+    if (!connectedDevice) {
         await connectCLOCK();
     }
-    else{
+    else {
         disconnectCLOCK();
     }
 }
@@ -165,7 +167,7 @@ function handleNotifications(event) {
 function handleM2M(mode, payload) {
     const combinedValue = (payload[0] << 24) | (payload[1] << 16) | (payload[2] << 8) | payload[3];
     switch (mode) {
-        case Modes.gitHash:
+        case mode_gitHash:
             {
                 gitHash.textContent = "0x" + (combinedValue & gitHashMask).toString(16);
                 if (combinedValue & dirtyFlagMask) {
@@ -174,7 +176,7 @@ function handleM2M(mode, payload) {
                 break;
             }
 
-        case Modes.gitTag:
+        case mode_gitTag:
             {
                 tagMajor = payload[0];
                 tagMinor = payload[1];
@@ -184,9 +186,10 @@ function handleM2M(mode, payload) {
                 if (tagOffset) {
                     gitTag.textContent += " offset: " + tagOffset;
                 }
+                changeModes(tagMajor, tagMinor, tagPatch);
                 break;
             }
-        case Modes.checkTime:
+        case mode_checkTime:
             {
                 text += "CLOCK deltaT: " + combinedValue.toString() + " seconds.\n";
             }
@@ -235,9 +238,9 @@ async function disconnectCLOCK() {
 
 async function getVersionInfo() {
     if (uartTXCharacteristic) {
-        sendModeUint(Modes.gitHash, "Get gitHash");
+        sendModeUint(mode_gitHash, "Get gitHash");
         setTimeout(async function () {
-            sendModeUint(Modes.gitTag, "Get gitTag");
+            sendModeUint(mode_gitTag, "Get gitTag");
         }, 100);
     }
 }
@@ -245,13 +248,27 @@ async function getVersionInfo() {
 async function sendNewTime() {
     await connectCLOCK(true);
     if (device) {
-        sendModeUint(Modes.setTime, "Set time", getUnixTime());
+        sendModeUint(mode_setTime, "Set time", getUnixTime());
         alert("Uhrzeit erfolgreich aktualisiert");
     }
 }
 
 function getUnixTime() {
     return Math.floor(Date.now() / 1000);
+}
+
+function changeModes(major, minor, patch) {
+    if (major == 0 && minor >= 2) {
+        text+=">=v0.2.0 detected\n"
+        // mode_gitHash [unchanged]
+        // mode_gitTag [unchanged]
+        mode_setTime = 0x62;
+        mode_readLDR = 0x60;
+        mode_checkTime = 0x64;
+        mode_brightnessCal = 0x44;
+        // mode_setState = [unchanged]
+        mode_printTime = 0x61;
+    }
 }
 
 toggleState(connectedDevice);
