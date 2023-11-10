@@ -258,7 +258,7 @@ function getUnixTime() {
 }
 
 function changeModes(major, minor, patch) {
-    if (major == 0 && minor >= 2) {
+    if (major > 0 || (major == 0 && minor >= 2)) {
         text+=">=v0.2.0 detected\n"
         // mode_gitHash [unchanged]
         // mode_gitTag [unchanged]
