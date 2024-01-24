@@ -38,11 +38,14 @@ const parser = new MessageParser();
 let mode_gitHash = 0x30;
 let mode_gitTag = 0x31;
 let mode_setTime = 0x41;
-let mode_readLDR = 0x60;
-let mode_checkTime = 0x61;
+let mode_printTime = 0x40;
 let mode_brightnessCal = 0x4B;
 let mode_setState = 0x50;
-let mode_printTime = 0x40;
+let mode_readLDR = 0x60;
+let mode_checkTime = 0x61;
+let mode_color = 0x71;
+let color_time = 0x00;
+let color_happy = 0x01;
 
 let tagMajor = 0;
 let tagMinor = 0;
@@ -84,7 +87,7 @@ const btnWordclock = document.getElementById("stateWordclock");
 
 btnToggleConnection.addEventListener("click", toggleConnection);
 btnDeviceInfo.addEventListener("click", async function () { await sendModeUint(mode_gitHash, "Get gitHash", 0x01) });
-btnReadGitHash.addEventListener("click", getVersionInfo);
+btnReadGitHash.addEventListener("click", getDeviceInfo);
 btnReadLDR.addEventListener("click", async function () { sendModePayload(mode_readLDR, "Read LDR") });
 btnReadBrightness.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "Read sensor value", 0x04) });
 btnSetDark.addEventListener("click", async function () { sendModeUint(mode_brightnessCal, "It's now dark", 0x01) });
@@ -95,6 +98,12 @@ btnCheckTime.addEventListener("click", function () { sendModeUint(mode_checkTime
 btnStrandtest.addEventListener("click", async function () { sendModeUint(mode_setState, "Blinken", 0x01) });
 btnMatrix.addEventListener("click", async function () { sendModeUint(mode_setState, "Matrix", 0x02) });
 btnWordclock.addEventListener("click", async function () { sendModeUint(mode_setState, "Wordclock", 0x03) });
+
+// color picker
+const colorPickerTime = document.getElementById("colorInputTime");
+const colorPickerHappy = document.getElementById("colorInputHappy");
+colorPickerTime.addEventListener("change", updateColorTime, false);
+colorPickerHappy.addEventListener("change", updateColorHappy, false);
 
 async function toggleConnection() {
     if (!connectedDevice) {
@@ -125,9 +134,7 @@ async function connectCLOCK() {
             connectionStatus.textContent = "UART RX characteristic discovered";
             await uartRXCharacteristic.startNotifications()
             await uartRXCharacteristic.addEventListener('characteristicvaluechanged', handleNotifications);
-            setTimeout(async function () {
-                await getVersionInfo();
-            }, 300);
+            setTimeout(async function () { await getDeviceInfo(); }, 400);
         }
     }
     catch (error) {
@@ -193,6 +200,20 @@ function handleM2M(mode, payload) {
             {
                 text += "CLOCK deltaT: " + combinedValue.toString() + " seconds.\n";
             }
+
+        case mode_color:
+            {
+                let newColor = "#" + ((payload[1] << 16) | (payload[2] << 8) | payload[3]).toString(16).padStart(6, '0');
+                switch (payload[0]) {
+                    case color_time:
+                        colorPickerTime.value = newColor;
+                        break;
+                    case color_happy:
+                        colorPickerHappy.value = newColor;
+                    default:
+                        break;
+                }
+            }
         default:
             break;
     }
@@ -236,12 +257,45 @@ async function disconnectCLOCK() {
     }
 }
 
-async function getVersionInfo() {
+async function getDeviceInfo() {
     if (uartTXCharacteristic) {
         sendModeUint(mode_gitHash, "Get gitHash");
         setTimeout(async function () {
             sendModeUint(mode_gitTag, "Get gitTag");
-        }, 100);
+        }, 200);
+        setTimeout(async function () {
+            getColor(color_time);
+        }, 400);
+        setTimeout(async function () {
+            getColor(color_happy);
+        }, 600);
+    }
+}
+
+async function getColor(colorID) {
+    const combinedValue = (colorID << 24) | 0x000000;
+    if (uartTXCharacteristic) {
+        sendModeUint(mode_color, "Get color", combinedValue);
+    }
+}
+
+async function updateColorTime() {
+    await connectCLOCK(true);
+    let combinedValue = parseInt(colorPickerTime.value.slice(1), 16);
+    combinedValue = (color_time << 24) | combinedValue;
+    combinedValue |= 0xF0000000;
+    if (device) {
+        sendModeUint(mode_color, "Set time color", combinedValue);
+    }
+}
+
+async function updateColorHappy() {
+    await connectCLOCK(true);
+    let combinedValue = parseInt(colorPickerHappy.value.slice(1), 16);
+    combinedValue = (color_happy << 24) | combinedValue;
+    combinedValue |= 0xF0000000;
+    if (device) {
+        sendModeUint(mode_color, "Set happy color", combinedValue);
     }
 }
 
@@ -259,7 +313,7 @@ function getUnixTime() {
 
 function changeModes(major, minor, patch) {
     if (major > 0 || (major == 0 && minor >= 2)) {
-        text+=">=v0.2.0 detected\n"
+        text += ">=v0.2.0 detected\n"
         // mode_gitHash [unchanged]
         // mode_gitTag [unchanged]
         mode_setTime = 0x62;
